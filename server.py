@@ -1,4 +1,4 @@
-# RASTERA SERVER FRAMEWORK
+# RASTERA SOCKET SERVER FRAMEWORK
 # COPYRIGHT 2017 (C) RASTERA DEVELOPMENT
 # rastera.xyz
 # DEVELOPED BY HENRY TU
@@ -79,7 +79,8 @@ def server_process(conn, addr):
             if not data_in:
                 continue
 
-            print("Data: ", data_in)
+            print('Connection from: %s:%i' % (addr[0], addr[1]))
+            print('Data: %s' % data_in)
 
             log_queue.put(data_in)
 
@@ -96,12 +97,12 @@ def server_process(conn, addr):
             if code == 0:  # Generate game code
                 game_code = gen_code()
                 rooms[game_code] = {}
-                conn.send(bytes('0 // ' + game_code, 'utf-8'))
+                conn.send(bytes('0 // %s\r\n' % game_code, 'utf-8'))
 
             elif code == 1:  # Join game
                 if message[0] in rooms:  # Check if it's valid
                     if len(rooms[message[0]]) > 1:
-                        conn.send(bytes('1 // Error: Room Full', 'utf-8'))
+                        conn.send(bytes('1 // Error: Room Full\r\n', 'utf-8'))
 
                     else:
                         if len(message) >= 2:
@@ -114,35 +115,32 @@ def server_process(conn, addr):
                                 'turn': not rooms[message[0]]
                             }
 
-                            pprint.pprint(rooms)
-
-                            conn.send(bytes('1 // Success: Connected to room // %s' % client_id, 'utf-8'))
+                            conn.send(bytes('1 // Success: Connected to room // %s\r\n' % client_id, 'utf-8'))
 
                         else:
-                            conn.send(bytes('1 // Error: Invalid Data', 'utf-8'))
+                            conn.send(bytes('-1 // Error: Invalid Data\r\n', 'utf-8'))
                 else:
-                    conn.send(bytes('1 // Error: Invalid Code', 'utf-8'))
+                    conn.send(bytes('-1 // Error: Invalid Code\r\n', 'utf-8'))
 
             elif code == 2:
                 if message[0] in rooms and message[1] in rooms[message[0]]:
                     if rooms[message[0]][message[1]]['turn']:
                         pass
-                    else:
-                        conn.send(bytes('1 // Error: Unauthorized - Not your turn', 'utf-8'))
-                else:
-                    conn.send(bytes('1 // Error: Unauthorized - Account not registered', 'utf-8'))
-            else:
-                conn.send(bytes('-1 // Error: Connection Error', 'utf-8'))
+                        # When player makes a move
 
-            conn.close()
-            return False
+                    else:
+                        conn.send(bytes('-1 // Error: Unauthorized - Not your turn\r\n', 'utf-8'))
+                else:
+                    conn.send(bytes('-1 // Error: Unauthorized - Account not registered\r\n', 'utf-8'))
+            else:
+                conn.send(bytes('-1 // Error: Connection Error\r\n', 'utf-8'))
 
         except:
 
             # Requests for client to be disconnected
             # If client is still connected
             try:
-                conn.send(bytes('-1 // Error: Server Error', 'utf-8'))
+                conn.send(bytes('-1 // Error: Server Error\r\n', 'utf-8'))
             except:
                 pass
 
@@ -170,9 +168,9 @@ if __name__ == '__main__':
     log_process.start()
 
     # Local debugging Console
-    fn = sys.stdin.fileno()
-    commandline = Process(target=commandline_in, args=(fn,))
-    commandline.start()
+    #fn = sys.stdin.fileno()
+    #commandline = Process(target=commandline_in, args=(fn,))
+    #commandline.start()
 
     # Game process
     game = threading.Thread(target=game_process, args=())
@@ -181,7 +179,7 @@ if __name__ == '__main__':
     # Creates thread for each incoming connection
     while True:
         try:
-            server.settimeout(0)
+            #server.settimeout(0)
             conn, addr = server.accept()
             threading.Thread(target=server_process, args=(conn, addr)).start()
 

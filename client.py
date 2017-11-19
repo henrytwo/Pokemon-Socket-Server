@@ -1,3 +1,10 @@
+# RASTERA CLIENT TEST
+# COPYRIGHT 2017 (C) RASTERA DEVELOPMENT
+# rastera.xyz
+# DEVELOPED BY HENRY TU
+
+# client.py
+
 import socket, os, sys
 from multiprocessing import *
 
