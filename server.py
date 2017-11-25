@@ -55,21 +55,6 @@ def logger(log_queue):
             data_file.write(str(log_queue.get()) + '\n')
             data_file.flush()  # Flushing the data so it can be written to the os write queue and be written to the file without calling close
 
-# Allows command line input from server console without stopping the server
-def commandline_in(fn):
-    print('Ready for input.')
-    sys.stdin = os.fdopen(fn)  # Opens and links this function/process to the main process's input stream because multiprocessing closes the input stream
-
-    while True:
-        server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Start TCP server
-        server.connect(('127.0.0.1', port))
-
-        command = input('> ')  # Getting input
-        server.send(bytes(command, 'utf-8'))
-        print("Console: ", bytes.decode(server.recv(1024), 'utf-8'))
-
-        server.close()
-
 def server_process(conn, addr):
 
     while True:
@@ -172,10 +157,6 @@ if __name__ == '__main__':
 
     log_process = Process(target=logger, args=(log_queue,))
     log_process.start()
-
-    #fn = sys.stdin.fileno()
-    #commandline = Process(target=commandline_in, args=(fn,))
-    #commandline.start()
 
     game = threading.Thread(target=game_process, args=())
     game.start()
