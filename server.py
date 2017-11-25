@@ -10,12 +10,12 @@ import threading
 from multiprocessing import *
 from math import *
 
-with open("data/config.rah", "r") as config:  # Reading server settings from a file so that the settings can be easily modifiable and is saved
+with open('data/config.rah', 'r') as config:  # Reading server settings from a file so that the settings can be easily modifiable and is saved
     config = config.read().strip().split("\n")
     host = config[0]  # The ip address that the socket will bind to
     port = int(config[1])  # The port that the socket will bind to
 
-with open('pokemon_data.txt', 'r') as file:
+with open('data/pokemon_data.txt', 'r') as file:
     pokemon_data_raw = file.read().strip().split('\n')
     pokemon_data = {}
 
@@ -76,11 +76,12 @@ def server_process(conn, addr):
         try:
             data_in = bytes.decode(conn.recv(1024), 'utf-8')
 
-            if not data_in:
-                continue
-
             print('Connection from: %s:%i' % (addr[0], addr[1]))
             print('Data: %s' % data_in)
+
+            if data_in.count(' // ') == 0:
+                conn.send(bytes('-1 // Error: Connection Error\r', 'utf-8'))
+                continue
 
             log_queue.put(data_in)
 
@@ -149,13 +150,19 @@ def server_process(conn, addr):
             return False
 
 def game_process():
-    pass
-    #while True:
-    #    print(rooms)
+
+    while True:
+        pass
+        #print(threading.active_count())
 
 if __name__ == '__main__':
 
     rooms = {}
+
+    print('STARTING RASTERA POKEMON SERVER')
+    print(' | rastera.xyz')
+    print(' | SERIES F2017')
+    print('\nStarting server: %s:%i' % (host, port))
 
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Start TCP server
     server.bind((host, port))
@@ -163,25 +170,20 @@ if __name__ == '__main__':
 
     log_queue = Queue()
 
-    # Logger
     log_process = Process(target=logger, args=(log_queue,))
     log_process.start()
 
-    # Local debugging Console
     #fn = sys.stdin.fileno()
     #commandline = Process(target=commandline_in, args=(fn,))
     #commandline.start()
 
-    # Game process
     game = threading.Thread(target=game_process, args=())
     game.start()
 
     # Creates thread for each incoming connection
     while True:
         try:
-            #server.settimeout(0)
             conn, addr = server.accept()
             threading.Thread(target=server_process, args=(conn, addr)).start()
-
         except:
             pass
