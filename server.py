@@ -7,34 +7,25 @@
 
 import os.path, traceback, socket, sys, uuid, pprint
 import threading
+from queue import *
 from multiprocessing import *
 from math import *
-
-with open('data/config.rah', 'r') as config:  # Reading server settings from a file so that the settings can be easily modifiable and is saved
-    config = config.read().strip().split("\n")
-    host = config[0]  # The ip address that the socket will bind to
-    port = int(config[1])  # The port that the socket will bind to
-
-with open('data/pokemon_data.txt', 'r') as file:
-    pokemon_data_raw = file.read().strip().split('\n')
-    pokemon_data = {}
-
-    # Converts data from string to dictionary
-    for line in range(len(pokemon_data_raw)):
-        pokemon_data_processed = pokemon_data_raw[line].split(',')
-
-        # Tries to convert all string to int
-        for item in range(len(pokemon_data_processed)):
-            try:
-                pokemon_data_processed[item] = int(pokemon_data_processed[item])
-            except:
-                pass
-
-        pokemon_data[pokemon_data_processed[0]] = pokemon_data_processed[1:]
 
 # Function to generate game codes
 def gen_code():
     return str(uuid.uuid4())[0:8]
+
+def get_attacks(num_attacks, attack_list):
+    attacks = {}
+
+    for num in range(0, num_attacks * 4, 4):
+        attacks[attack_list[num]] = {
+            'cost':int(attack_list[num + 1]),
+            'damage':int(attack_list[num + 2]),
+            'special':attack_list[num + 3]
+        }
+
+    return attacks
 
 # Get the stats of all pokemon
 # Gives the player a copy
@@ -80,7 +71,10 @@ def server_process(conn, addr):
 
             print(code, message, addr)
 
-            if code == 0:  # Generate game code
+            if code == 3000:
+                conn.send(bytes('3000 // DOCTYPE!\r\n', 'utf-8'))
+
+            elif code == 0:  # Generate game code
                 game_code = gen_code()
                 rooms[game_code] = {}
                 conn.send(bytes('0 // %s\r\n' % game_code, 'utf-8'))
@@ -88,7 +82,7 @@ def server_process(conn, addr):
             elif code == 1:  # Join game
                 if message[0] in rooms:  # Check if it's valid
                     if len(rooms[message[0]]) > 1:
-                        conn.send(bytes('1 // Error: Room Full\r\n', 'utf-8'))
+                        conn.send(bytes('-1 // Error: Room Full\r\n', 'utf-8'))
 
                     else:
                         if len(message) >= 2:
@@ -137,12 +131,50 @@ def server_process(conn, addr):
 def game_process():
 
     while True:
-        pass
-        #print(threading.active_count())
+        for room in rooms:
+            if len(room) == 2:
+                for player in room:
+                    send_queue.put([player, ])
+
+                # Flags room as active
+                rooms[room]["active"] = True
+
+with open('data/config.rah', 'r') as config:  # Reading server settings from a file so that the settings can be easily modifiable and is saved
+    config = config.read().strip().split("\n")
+    host = config[0]  # The ip address that the socket will bind to
+    port = int(config[1])  # The port that the socket will bind to
+
+with open('data/pokemon_data.txt', 'r') as file:
+    pokemon_data_raw = file.read().strip().split('\n')
+    pokemon_data = {}
+
+    # Converts data from string to dictionary
+    for line in range(len(pokemon_data_raw)):
+        pokemon_data_processed = pokemon_data_raw[line].split(',')
+
+        # Tries to convert all string to int
+        for item in range(len(pokemon_data_processed)):
+            try:
+                pokemon_data_processed[item] = int(pokemon_data_processed[item])
+            except:
+                pass
+
+        pokemon_data[pokemon_data_processed[0]] = {
+            'hp':pokemon_data_processed[1],
+            'type':pokemon_data_processed[2],
+            'resistance':pokemon_data_processed[3],
+            'weakness':pokemon_data_processed[4],
+            'numattacks':int(pokemon_data_processed[5]),
+            'attacks':get_attacks(int(pokemon_data_processed[5]), pokemon_data_processed[6:])
+
+        }
 
 if __name__ == '__main__':
 
+    send_queue = Queue()
     rooms = {}
+
+    pprint.pprint(pokemon_data)
 
     print('STARTING RASTERA POKEMON SERVER')
     print(' | rastera.xyz')
