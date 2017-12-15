@@ -91,7 +91,8 @@ def server_process(conn, addr):
 
                             rooms[message[0]][client_id] = {
                                 'name': message[1],
-                                'pokemon': get_pokemon(message[2:]),
+                                'selected_pokemon': '',
+                                'pokemon': get_pokemon(message[3:]),
                                 'turn': not rooms[message[0]]
                             }
 
@@ -104,7 +105,14 @@ def server_process(conn, addr):
 
             elif code == 2:
                 if message[0] in rooms and message[1] in rooms[message[0]]:
-                    if rooms[message[0]][message[1]]['turn']:
+                    if message[2] == 'InitPkmn' and not rooms[message[0]][message[1]]['selected_pokemon']:
+                        rooms[message[0]][message[1]]['selected_pokemon'] = message[3]
+                        conn.send(bytes('2 // Success: Pokemon Registered\r\n', 'utf-8'))
+
+                    elif message[2] == 'Ping':
+                        conn.send(bytes('2 // Success: Pong!\r\n', 'utf-8'))
+
+                    elif rooms[message[0]][message[1]]['turn']:
                         pass
                         # When player makes a move
 

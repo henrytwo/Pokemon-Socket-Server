@@ -119,7 +119,7 @@ Goldeen,40,water, ,electric,1,Horn Attack,10,10,
 Seaking,70,water, ,electric,2,Horn Attack,10,10, ,Waterfall,20,30,
 Staryu,40,water, ,electric,1,Slap,10,20,
 Starmie,60,water, ,electric,2,Recover,20,0,heal,Star Freeze,30,20,stun
-Mr. Mime,40,psychic, ,psychic,1,Meditate,20,10,wild storm
+Mr_Mime,40,psychic, ,psychic,1,Meditate,20,10,wild storm
 Scyther,70,leaf,fighting,fire,2,Swords Dance,10,0,disable,Slash,30,30,
 Jynx,70,psychic, ,psychic,2,Doubleslap,10,10,wild storm,Meditate,30,20,wild storm
 Electabuzz,70,electric, ,fighting,2,Thundershock,10,10,stun,Thunderpunch,20,30,wild storm
@@ -149,3 +149,15 @@ Dragonair,80,normal,psychic, ,2,Slam,30,30,wild storm,Hyper Beam,40,20,disable
 Dragonite,100,normal,fighting, ,1,Slam,40,40,wild storm
 Mewtwo,60,psychic, ,psychic,2,Psychic,20,10,wild storm,Barrier,20,10,disable
 Mew,50,psychic, ,psychic,2,Psywave,10,10,wild storm,Devolution Beam,20,20,
+Ryan,999,compsci,electric,zhu,2,BrainF***,50,999,disable,You do realize?,50,999,disable
+Henning,999,nuclear,electric,zhu,2,F*** Face,50,999,disable,Prime Bag,50,999,disable
+Keith,999,holyness,electric, ,2,Blessing,50,999,recharge,Holy Fire,50,999,disable
+Andrew,999,gei,electric,zhu,3,F*** Hardware,50,999,disable,Les Storm,50,999,disable,Break Electronics,0,999,stun
+Karl,69,zhu, ,compsci,3,Git Bash,50,-3000,wild storm,Port 3000,50,999,disable,Sliding In,21,-69,wild storm
+Syed,420,pei,electric,zhu,2,Pythonic,50,999,wild storm,F#,50,999,disable
+Henry,999,compsci,electric,zhu,2,Linux,50,999,recharge,Meh,50,999,disable
+Kevin_Pei,999,holyness,electric, ,2,Hack the North,50,999,recharge,NodeJS,50,999,disable
+Carol_Chen,999,kippy,electric,zhu,2,Jerry,50,999,recharge,Hacking,50,999,disable
+Adam,999,compsci,electric,zhu,2,Despair,50,999,disable,Depression,50,999,disable
+Rahma,999,water,kippy,compsci,2,Water Spill,50,666,disable,PLeaseee,10,20,recharge
+Searcy,180,physics,zhu,compsci,2,CAST,45,180,wildstorm,SOHCAHTOA,50,1,disable
