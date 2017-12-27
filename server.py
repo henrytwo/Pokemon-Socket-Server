@@ -109,8 +109,9 @@ def server_process(conn, addr):
                         rooms[message[0]][message[1]]['selected_pokemon'] = message[3]
                         conn.send(bytes('2 // Success: Pokemon Registered\r\n', 'utf-8'))
 
-                    elif message[2] == 'Ping':
-                        conn.send(bytes('2 // Success: Pong!\r\n', 'utf-8'))
+                    elif message[2] == 'Ready':
+                        conn.send(bytes('2 // MakeChoose // Henry //'
+                                        ' Karl // -232 // 232 // Henry // 9000 // 433\r\n', 'utf-8'))
 
                     elif rooms[message[0]][message[1]]['turn']:
                         pass
@@ -128,6 +129,7 @@ def server_process(conn, addr):
             # Requests for client to be disconnected
             # If client is still connected
             try:
+
                 conn.send(bytes('-1 // Error: Server Error\r\n', 'utf-8'))
             except:
                 pass
