@@ -9,23 +9,164 @@ import os.path, traceback, socket, sys, uuid, pprint
 import threading
 from queue import *
 from multiprocessing import *
+import random
 from math import *
 
-# Function to generate game codes
-def gen_code():
-    return str(uuid.uuid4())[0:8]
+class attack:
+    def __init__(this, attack_data):
+        this.name = attack_data[0]
+        this.cost = int(attack_data[1])
+        this.damage = int(attack_data[2])
+        if len(attack_data) > 3:
+            this.special = attack_data[3]
+        else:
+            this.special = None
 
-def get_attacks(num_attacks, attack_list):
-    attacks = {}
+class pokemon:
+    def __init__(this, pokemon_data_processed):
+        this.hp = pokemon_data_processed[0]
+        this.hptotal = pokemon_data_processed[0]
+        this.type = pokemon_data_processed[1]
+        this.resistance = pokemon_data_processed[2]
+        this.weakness = pokemon_data_processed[3]
+        this.numattacks = int(pokemon_data_processed[4])
+        this.attacks = this.get_attacks(int(pokemon_data_processed[4]), pokemon_data_processed[5:])
+        this.energy = 50
+        this.stunned = False
+        this.disabled = False
 
-    for num in range(0, num_attacks * 4, 4):
-        attacks[attack_list[num]] = {
-            'cost':int(attack_list[num + 1]),
-            'damage':int(attack_list[num + 2]),
-            'special':attack_list[num + 3]
-        }
+    def get_attacks(this, num_attacks, attack_data):
+        attacks = {}
+        for num in range(0, num_attacks * 4, 4):
+            attacks[attack_data[num]] = attack(attack_data[num : num + 3])
+        return attacks
 
-    return attacks
+class client:
+    def __init__(this, conn, addr):
+        this.alive = True
+        this.in_game = False
+
+        this.in_queue = Queue()
+        this.out_queue = Queue()
+
+        this.conn = conn
+        this.addr = addr
+
+        this.com_thread_read = threading.Thread(target=this.com_read, args=(conn,))
+        this.com_thread_read.start()
+
+        this.com_thread_write = threading.Thread(target=this.com_write, args=(conn,))
+        this.com_thread_write.start()
+
+        this.thread_service = threading.Thread(target=this.service)
+        this.thread_service.start()
+
+        print("Creating object for: %s:%i" % (addr[0], addr[1]))
+
+    def gen_code(this):
+        return str(uuid.uuid4())[0:8]
+
+    def pokemon_update(this):
+        return ""
+
+    def make_action(this):
+        this.out_queue.put("2 // MakeAction // %s" % this.pokemon_update())
+        return this.in_queue.get()
+
+    def make_choose(this):
+        this.out_queue.put("2 // MakeChoose // %s" % this.pokemon_update())
+        return this.in_queue.get()
+
+    def result(this, message):
+        this.out_queue.put("2 // Result // %s" % message)
+        
+    def service(this):
+        while this.alive:
+            try:
+                if not this.in_game:
+                    code, message = this.com_get()
+
+                    # Establish communication
+                    if code == 3000:
+                        this.out_queue.put('3000 // DOCTYPE!')
+
+                    # Generate Gamecode
+                    elif code == 0:
+                        game_code = this.gen_code()
+                        rooms[game_code] = {}
+                        this.out_queue.put('0 // %s' % game_code)
+
+                    # Join game
+                    elif code == 1:
+                        if message[0] in rooms:  # Check if it's valid
+                            if len(rooms[message[0]]) > 1:
+                                this.out_queue.put('-1 // Error: Room Full')
+                            else:
+                                if len(message) >= 2:
+
+                                    client_id = str(uuid.uuid4())
+
+                                    rooms[message[0]][client_id] = {
+                                        'name': message[1],
+                                        'selected_pokemon': '',
+                                        'pokemon': get_pokemon(message[3:]),
+                                        'turn': not rooms[message[0]]
+                                    }
+
+                                    this.out_queue.put('1 // Success: Connected to room // %s' % client_id)
+
+                                else:
+                                    this.out_queue.put('-1 // Error: Invalid Data')
+                        else:
+                            this.out_queue.put('-1 // Error: Invalid Code')
+            except:
+                print(traceback.format_exc())
+                this.alive = False
+        try:
+            conn.send(bytes('-1 // Server Closed\r\n', 'utf-8'))
+        except:
+            pass
+
+    def com_read(this, conn):
+        while this.alive:
+            try:
+                message_in = bytes.decode(conn.recv(1024), 'utf-8')
+                print('In:', message_in)
+                this.in_queue.put(message_in)
+            except:
+                this.alive = False
+                print(traceback.format_exc())
+
+    def com_write(this, conn):
+        while this.alive:
+            try:
+                message_out = this.out_queue.get()
+                print('Out:', message_out)
+                conn.send(bytes(message_out + '\r\n', 'utf-8'))
+            except:
+                this.alive = False
+                print(traceback.format_exc())
+
+    def com_get(this):
+        try:
+            data_in = this.in_queue.get()
+
+            if data_in.count(' // ') == 0:
+                this.result('-1 // Error: Connection Error')
+                return -1
+
+            data_list = data_in.strip('\n').split(' // ')
+            code = int(data_list[0])
+
+            if len(data_list) == 0:
+                message = []
+            else:
+                message = data_list[1:]
+
+            return [code, message]
+        except:
+            print(traceback.format_exc())
+            return -1
 
 # Get the stats of all pokemon
 # Gives the player a copy
@@ -44,112 +185,9 @@ def logger(log_queue):
     with open('data/log.log', 'a+') as data_file:
         while True:
             data_file.write(str(log_queue.get()) + '\n')
-            data_file.flush()  # Flushing the data so it can be written to the os write queue and be written to the file without calling close
+            data_file.flush()
 
-def server_process(conn, addr):
-
-    while True:
-        try:
-            data_in = bytes.decode(conn.recv(1024), 'utf-8')
-
-            print('Connection from: %s:%i' % (addr[0], addr[1]))
-            print('Data: %s' % data_in)
-
-            if data_in.count(' // ') == 0:
-                conn.send(bytes('-1 // Error: Connection Error\r', 'utf-8'))
-                continue
-
-            log_queue.put(data_in)
-
-            data_list = data_in.strip('\n').split(' // ')
-            code = int(data_list[0])
-
-            if len(data_list) == 0:
-                message = []
-            else:
-                message = data_list[1:]
-
-            print(code, message, addr)
-
-            if code == 3000:
-                conn.send(bytes('3000 // DOCTYPE!\r\n', 'utf-8'))
-
-            elif code == 0:  # Generate game code
-                game_code = gen_code()
-                rooms[game_code] = {}
-                conn.send(bytes('0 // %s\r\n' % game_code, 'utf-8'))
-
-            elif code == 1:  # Join game
-                if message[0] in rooms:  # Check if it's valid
-                    if len(rooms[message[0]]) > 1:
-                        conn.send(bytes('-1 // Error: Room Full\r\n', 'utf-8'))
-
-                    else:
-                        if len(message) >= 2:
-
-                            client_id = str(uuid.uuid4())
-
-                            rooms[message[0]][client_id] = {
-                                'name': message[1],
-                                'selected_pokemon': '',
-                                'pokemon': get_pokemon(message[3:]),
-                                'turn': not rooms[message[0]]
-                            }
-
-                            conn.send(bytes('1 // Success: Connected to room // %s\r\n' % client_id, 'utf-8'))
-
-                        else:
-                            conn.send(bytes('-1 // Error: Invalid Data\r\n', 'utf-8'))
-                else:
-                    conn.send(bytes('-1 // Error: Invalid Code\r\n', 'utf-8'))
-
-            elif code == 2:
-                if message[0] in rooms and message[1] in rooms[message[0]]:
-                    if message[2] == 'InitPkmn' and not rooms[message[0]][message[1]]['selected_pokemon']:
-                        rooms[message[0]][message[1]]['selected_pokemon'] = message[3]
-                        conn.send(bytes('2 // Success: Pokemon Registered\r\n', 'utf-8'))
-
-                    elif message[2] == 'Ready':
-                        conn.send(bytes('2 // MakeChoose // Henry //'
-                                        ' Karl // -232 // 232 // Henry // 9000 // 433\r\n', 'utf-8'))
-
-                    elif rooms[message[0]][message[1]]['turn']:
-                        pass
-                        # When player makes a move
-
-                    else:
-                        conn.send(bytes('-1 // Error: Unauthorized - Not your turn\r\n', 'utf-8'))
-                else:
-                    conn.send(bytes('-1 // Error: Unauthorized - Account not registered\r\n', 'utf-8'))
-            else:
-                conn.send(bytes('-1 // Error: Connection Error\r\n', 'utf-8'))
-
-        except:
-
-            # Requests for client to be disconnected
-            # If client is still connected
-            try:
-
-                conn.send(bytes('-1 // Error: Server Error\r\n', 'utf-8'))
-            except:
-                pass
-
-            conn.close()
-            print(traceback.format_exc())  # Crash, print crash message
-            return False
-
-def game_process():
-
-    while True:
-        for room in rooms:
-            if len(room) == 2:
-                for player in room:
-                    send_queue.put([player, ])
-
-                # Flags room as active
-                rooms[room]["active"] = True
-
-with open('data/config.rah', 'r') as config:  # Reading server settings from a file so that the settings can be easily modifiable and is saved
+with open('data/config.rah', 'r') as config:
     config = config.read().strip().split("\n")
     host = config[0]  # The ip address that the socket will bind to
     port = int(config[1])  # The port that the socket will bind to
@@ -169,22 +207,14 @@ with open('data/pokemon_data.txt', 'r') as file:
             except:
                 pass
 
-        pokemon_data[pokemon_data_processed[0]] = {
-            'hp':pokemon_data_processed[1],
-            'type':pokemon_data_processed[2],
-            'resistance':pokemon_data_processed[3],
-            'weakness':pokemon_data_processed[4],
-            'numattacks':int(pokemon_data_processed[5]),
-            'attacks':get_attacks(int(pokemon_data_processed[5]), pokemon_data_processed[6:])
-
-        }
+        pokemon_data[pokemon_data_processed[0]] = pokemon(pokemon_data_processed[1:])
 
 if __name__ == '__main__':
 
-    send_queue = Queue()
     rooms = {}
+    connections = []
 
-    pprint.pprint(pokemon_data)
+    port = random.randint(2000,3000)
 
     print('STARTING RASTERA POKEMON SERVER')
     print(' | rastera.xyz')
@@ -195,18 +225,14 @@ if __name__ == '__main__':
     server.bind((host, port))
     server.listen(1000)
 
-    log_queue = Queue()
+    #log_queue = Queue()
+    #log_process = Process(target=logger, args=(log_queue,))
+    #log_process.start()
 
-    log_process = Process(target=logger, args=(log_queue,))
-    log_process.start()
-
-    game = threading.Thread(target=game_process, args=())
-    game.start()
-
-    # Creates thread for each incoming connection
+    # Creates client object for each incoming connection
     while True:
         try:
             conn, addr = server.accept()
-            threading.Thread(target=server_process, args=(conn, addr)).start()
+            connections.append(client(conn, addr))
         except:
             pass
