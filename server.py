@@ -25,25 +25,34 @@ class room:
     def engine(self):
         while self.game_running:
             try:
-                if not self.can_join():
+                if not self.can_join() and self.client_ready():
                     self.set_turn()
 
                     print(self.clients)
 
-                    connections[self.clients[0]].make_action()
-                    connections[self.clients[1]].message("Waiting for sheit")
+                    connections[self.clients[1]].message('Waiting for %s to finish their turn' % connections[self.clients[0]].name)
 
+                    while True:
+                        connections[self.clients[0]].make_action()
+                        message = connections[self.clients[0]].com_get()
+                        connections[self.clients[0]].message("Damn how great")
 
             except:
+                print(traceback.format_exc())
+
                 self.game_running = False
-                for client in self.clients:
-                    connections[client].result("Engine Error")
+                for c in self.clients:
+                    connections[c].in_game = False
+                    connections[c].result('Engine Error')
 
     def set_turn(self):
 
         if not self.shuffled:
             self.shuffled = True
             random.shuffle(self.clients)
+
+            connections[self.clients[0]].message('&cThe opponent has joined the match!&n&n----------&n%s&nvs&n%s&n----------&n&nStart battle!&n' % (connections[self.clients[0]].name, connections[self.clients[1]].name))
+            connections[self.clients[1]].message('&cThe opponent has joined the match!&n&n----------&n%s&nvs&n%s&n----------&n&nStart battle!&n' % (connections[self.clients[1]].name, connections[self.clients[0]].name))
 
         self.clients.append(self.clients[0])
         del self.clients[0]
@@ -57,6 +66,14 @@ class room:
             return True
         else:
             return False
+
+    def client_ready(self):
+        ready = True
+        for c in self.clients:
+            if not connections[c].in_game:
+                ready = False
+                break
+        return ready
 
 class attack:
     def __init__(self, attack_data):
@@ -113,7 +130,7 @@ class client:
         self.thread_service = threading.Thread(target=self.service)
         self.thread_service.start()
 
-        print("Creating object for: %s:%i" % (addr[0], addr[1]))
+        print('Creating object for: %s:%i' % (addr[0], addr[1]))
 
     def gen_code(self):
         return str(uuid.uuid4())[0:8]
@@ -125,18 +142,21 @@ class client:
         return update_data[4:]
 
     def make_action(self):
-        self.out_queue.put("2 // MakeAction // %s" % self.pokemon_update())
+        self.out_queue.put('2 // MakeAction // %s' % self.pokemon_update())
         return self.in_queue.get()
 
     def make_choose(self):
-        self.out_queue.put("2 // MakeChoose // %s" % self.pokemon_update())
+        self.out_queue.put('2 // MakeChoose // %s' % self.pokemon_update())
         return self.in_queue.get()
 
-    def message(self, message):
-        self.out_queue.put("2 // Result // %s" % message)
+    def draw(self, m):
+        self.out_queue.put('2 // Draw // %s' % m)
 
-    def result(self, message):
-        self.out_queue.put("2 // Result // %s" % message)
+    def message(self, m):
+        self.out_queue.put('2 // Message // %s' % m)
+
+    def result(self, m):
+        self.out_queue.put('2 // Result // %s' % m)
         
     def service(self):
         while self.alive:
@@ -179,13 +199,14 @@ class client:
                             self.out_queue.put('2 // Success: Pokemon Registered')
 
                         elif message[0] == 'Ready':
-                            self.make_action()
+                            self.message('Waiting for opponent to join...')
+                            self.in_game = True
 
             except:
                 print(traceback.format_exc())
                 self.alive = False
         try:
-            print("Client Disconnected")
+            print('Client Disconnected')
             conn.send(bytes('-1 // Server Closed\r\n', 'utf-8'))
         except:
             pass
@@ -254,7 +275,7 @@ def gen_uuid():
     return str(uuid.uuid4())
 
 with open('data/config.rah', 'r') as config:
-    config = config.read().strip().split("\n")
+    config = config.read().strip().split('\n')
     HOST = config[0]  # The ip address that the socket will bind to
     PORT = int(config[1])  # The port that the socket will bind to
     NUM_POKEMON = int(config[2])

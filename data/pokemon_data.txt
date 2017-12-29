@@ -152,6 +152,7 @@ Mew,50,psychic, ,psychic,2,Psywave,10,10,wild storm,Devolution Beam,20,20,
 Ryan,999,compsci,electric,zhu,2,BrainF***,50,999,disable,You do realize?,50,999,disable
 Henning,999,nuclear,electric,zhu,2,F*** Face,50,999,disable,Prime Bag,50,999,disable
 Keith,999,holyness,electric, ,2,Blessing,50,999,recharge,Holy Fire,50,999,disable
+Scott,999,waterloo,electric, ,2,EUCLID,50,999,recharge,CCC,50,999,disable
 Andrew,999,gei,electric,zhu,3,F*** Hardware,50,999,disable,Les Storm,50,999,disable,Break Electronics,0,999,stun
 Karl,69,zhu, ,compsci,3,Git Bash,50,-3000,wild storm,Port 3000,50,999,disable,Sliding In,21,-69,wild storm
 Syed,420,pei,electric,zhu,2,Pythonic,50,999,wild storm,F#,50,999,disable
@@ -159,5 +160,6 @@ Henry,999,compsci,electric,zhu,2,Linux,50,999,recharge,Meh,50,999,disable
 Kevin_Pei,999,holyness,electric, ,2,Hack the North,50,999,recharge,NodeJS,50,999,disable
 Carol_Chen,999,kippy,electric,zhu,2,Jerry,50,999,recharge,Hacking,50,999,disable
 Adam,999,compsci,electric,zhu,2,Despair,50,999,disable,Depression,50,999,disable
+Jerry,999,compsci,electric,zhu,2,Charming Looks,50,999,disable,Jerry Point,50,999,disable
 Rahma,999,water,kippy,compsci,2,Water Spill,50,666,disable,PLeaseee,10,20,recharge
 Searcy,180,physics,zhu,compsci,2,CAST,45,180,wildstorm,SOHCAHTOA,50,1,disable
