@@ -33,9 +33,52 @@ class room:
                     connections[self.clients[1]].message('Waiting for %s to finish their turn' % connections[self.clients[0]].name)
 
                     while True:
-                        connections[self.clients[0]].make_action()
-                        message = connections[self.clients[0]].com_get()
-                        connections[self.clients[0]].message("Damn how great")
+
+                        if connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].hp <= 0:
+                            del connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon]
+
+                            if len(connections[self.clients[0]].pokemon_dict) == 0:
+                                self.game_running = False
+
+                                action = ['Retreat', connections[self.clients[0]].make_choose()[1][0]]
+
+                        elif connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned:
+                            connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned = False
+
+                            for c in self.clients:
+                                connections[self.clients[c]].message("%s IS STUNNED!" % connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].name)
+
+                            action = ['Pass']
+
+                        else:
+                            for c in self.clients:
+                                connections[c].message("----- %s's TURN! -----" % connections[self.clients[0]].name)
+
+                            action = connections[self.clients[0]].make_action()[1][1:]
+
+                        print(action)
+
+                        if action:
+                            if action[0] == 'Pass':
+                                for c in self.clients:
+                                    connections[c].message("%s passed their turn" % connections[self.clients[0]].name)
+
+                                break
+
+                            elif action[0] == 'Retreat':
+                                connections[self.clients[0]].selected_pokemon = action[1]
+
+                                for c in self.clients:
+                                    connections[c].message("%s retreated and switched to %s&n%s: %s I CHOOSE YOU!" % (connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon, connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon))
+
+                                break
+
+                            elif action[0] == 'Info':
+                                connections[self.clients[0]].info()
+
+                            elif action[0] != 'Back':
+                                pass
+
 
             except:
                 print(traceback.format_exc())
@@ -52,7 +95,7 @@ class room:
             random.shuffle(self.clients)
 
             connections[self.clients[0]].message('&cThe opponent has joined the match!&n&n----------&n%s&nvs&n%s&n----------&n&nStart battle!&n' % (connections[self.clients[0]].name, connections[self.clients[1]].name))
-            connections[self.clients[1]].message('&cThe opponent has joined the match!&n&n----------&n%s&nvs&n%s&n----------&n&nStart battle!&n' % (connections[self.clients[1]].name, connections[self.clients[0]].name))
+            connections[self.clients[0]].message('&cThe opponent has joined the match!&n&n----------&n%s&nvs&n%s&n----------&n&nStart battle!&n' % (connections[self.clients[1]].name, connections[self.clients[0]].name))
 
         self.clients.append(self.clients[0])
         del self.clients[0]
@@ -136,18 +179,21 @@ class client:
         return str(uuid.uuid4())[0:8]
 
     def pokemon_update(self):
-        update_data = ''
+        update_data = self.selected_pokemon
         for pokemon_name in self.pokemon_dict:
             update_data += ' // %s // %s // %s' % (pokemon_name, self.pokemon_dict[pokemon_name].hp, self.pokemon_dict[pokemon_name].energy)
-        return update_data[4:]
+        return update_data
 
     def make_action(self):
         self.out_queue.put('2 // MakeAction // %s' % self.pokemon_update())
-        return self.in_queue.get()
+        return self.com_get()
 
     def make_choose(self):
         self.out_queue.put('2 // MakeChoose // %s' % self.pokemon_update())
-        return self.in_queue.get()
+        return self.com_get()
+
+    def info(self):
+        self.out_queue.put('2 // Info // %s' % self.pokemon_update())
 
     def draw(self, m):
         self.out_queue.put('2 // Draw // %s' % m)
@@ -157,6 +203,7 @@ class client:
 
     def result(self, m):
         self.out_queue.put('2 // Result // %s' % m)
+
         
     def service(self):
         while self.alive:
@@ -216,7 +263,12 @@ class client:
             try:
                 message_in = bytes.decode(conn.recv(1024), 'utf-8')
                 print('In:', message_in)
-                self.in_queue.put(message_in)
+
+                if self.in_game and message_in == '2 // Ready':
+                    print("Ready filtered")
+                else:
+                    self.in_queue.put(message_in)
+
             except:
                 self.alive = False
                 print(traceback.format_exc())
@@ -233,6 +285,7 @@ class client:
 
     def com_get(self):
         try:
+            print("Read Issued")
             data_in = self.in_queue.get()
 
             if data_in.count(' // ') == 0:
@@ -246,6 +299,8 @@ class client:
                 message = []
             else:
                 message = data_list[1:]
+
+            print("Read:", code, message)
 
             return [code, message]
         except:
