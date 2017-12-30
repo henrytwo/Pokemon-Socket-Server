@@ -37,10 +37,11 @@ class room:
                         if connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].hp <= 0:
                             del connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon]
 
-                            if len(connections[self.clients[0]].pokemon_dict) == 0:
-                                self.game_running = False
+                            connections[self.clients[0]].message("Your Pokemon has fainted! You must pick a replacement to continue fighting!")
+                            action = ['Retreat', connections[self.clients[0]].make_choose()[1]]
 
-                                action = ['Retreat', connections[self.clients[0]].make_choose()[1][0]]
+                            if len(connections[self.clients[0]].pokemon_dict) == 0:
+                                    self.game_running = False
 
                         elif connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned:
                             connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned = False
@@ -77,8 +78,22 @@ class room:
                                 connections[self.clients[0]].info()
 
                             elif action[0] != 'Back':
-                                pass
+                                attacks = connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].attacks
 
+                                print(attacks)
+
+                                if connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].energy - attacks[int(action[0])].cost >= 0:
+                                    connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].energy -= attacks[int(action[0])].cost
+
+                                    for c in self.clients:
+                                        connections[c].draw(connections[self.clients[0]].selected_pokemon)
+                                        connections[c].message("%s: %s, USE %s!" % (connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon, attacks[int(action[0])].name))
+
+                                    connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon] = self.attack_action(connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon], connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon], attacks[int(action[0])])
+
+                                    break
+                                else:
+                                    connections[self.clients[0]].message("You do not have enough energy to use this attack!")
 
             except:
                 print(traceback.format_exc())
@@ -96,6 +111,10 @@ class room:
 
             connections[self.clients[0]].message('&cThe opponent has joined the match!&n&n----------&n%s&nvs&n%s&n----------&n&nStart battle!&n' % (connections[self.clients[0]].name, connections[self.clients[1]].name))
             connections[self.clients[0]].message('&cThe opponent has joined the match!&n&n----------&n%s&nvs&n%s&n----------&n&nStart battle!&n' % (connections[self.clients[1]].name, connections[self.clients[0]].name))
+
+            for c in self.clients:
+                connections[c].message('%s: %s I CHOOSE YOU!' % (connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon))
+                connections[c].message('%s: %s I CHOOSE YOU!' % (connections[self.clients[1]].name, connections[self.clients[1]].selected_pokemon))
 
         self.clients.append(self.clients[0])
         del self.clients[0]
@@ -117,6 +136,10 @@ class room:
                 ready = False
                 break
         return ready
+
+    def attack_action(self, target, attacker, attack):
+        target.hp = -6000
+        return target
 
 class attack:
     def __init__(self, attack_data):
@@ -143,9 +166,9 @@ class pokemon:
         self.disabled = False
 
     def get_attacks(self, num_attacks, attack_data):
-        attacks = {}
+        attacks = []
         for num in range(0, num_attacks * 4, 4):
-            attacks[attack_data[num]] = attack(attack_data[num : num + 3])
+            attacks.append(attack(attack_data[num : num + 3]))
         return attacks
 
 class client:
@@ -203,7 +226,6 @@ class client:
 
     def result(self, m):
         self.out_queue.put('2 // Result // %s' % m)
-
         
     def service(self):
         while self.alive:
@@ -229,6 +251,8 @@ class client:
                                 if len(message) == 1 + NUM_POKEMON:
                                     for pokemon_name in message[1:]:
                                         self.pokemon_dict[pokemon_name] = pokemon_data[pokemon_name]
+
+                                    print(self.pokemon_dict)
 
                                     rooms[message[0]].join(self.client_id)
                                     self.out_queue.put('1 // Success: Connected to room')
