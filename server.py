@@ -10,6 +10,7 @@ import threading
 from queue import *
 from multiprocessing import *
 import random
+from copy import *
 from math import *
 
 class room:
@@ -35,10 +36,11 @@ class room:
                     while True:
 
                         if connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].hp <= 0:
-                            del connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon]
 
                             connections[self.clients[0]].message("Your Pokemon has fainted! You must pick a replacement to continue fighting!")
-                            action = ['Retreat', connections[self.clients[0]].make_choose()[1]]
+                            action = connections[self.clients[0]].make_choose()[1]
+
+                            del connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon]
 
                             if len(connections[self.clients[0]].pokemon_dict) == 0:
                                     self.game_running = False
@@ -55,7 +57,7 @@ class room:
                             for c in self.clients:
                                 connections[c].message("----- %s's TURN! -----" % connections[self.clients[0]].name)
 
-                            action = connections[self.clients[0]].make_action()[1][1:]
+                            action = connections[self.clients[0]].make_action()[1][0:]
 
                         print(action)
 
@@ -90,7 +92,6 @@ class room:
                                         connections[c].message("%s: %s, USE %s!" % (connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon, attacks[int(action[0])].name))
 
                                     connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon] = self.attack_action(connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon], connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon], attacks[int(action[0])])
-
                                     break
                                 else:
                                     connections[self.clients[0]].message("You do not have enough energy to use this attack!")
@@ -138,7 +139,67 @@ class room:
         return ready
 
     def attack_action(self, target, attacker, attack):
-        target.hp = -6000
+
+        base_damage = attack.damage
+        message_buffer = ''
+
+        if attacker.disabled:
+            base_damage = max(0, base_damage - 10)
+
+        if base_damage > 0:
+            if attacker.type == target.resistance:
+                base_damage *= 0.5
+                message_buffer += "IT'S NOT VERY EFFECTIVE!\n"
+            elif attacker.type == target.weakness:
+                base_damage *= 2
+                message_buffer += "IT'S SUPER EFFECTIVE!\n"
+
+        final_damage = base_damage
+
+        if attack.special != 'N/A' and random.randint(0, 1):
+            if attack.special == 'Stun':
+                if random.randint(0, 1):
+                    target.stunned = True
+                    message_buffer += "%s HAS BEEN STUNNED!" % target.name
+
+                else:
+                    message_buffer += "%s DODGED THE STUN!" % target.name
+
+            if attack.special == 'Wild Card':
+                if random.randint(0, 1):
+                    final_damage = 0
+                    message_buffer = "%s MISSED! NO DAMAGE INFLICTED!" % attacker.name
+
+            if attack.special == 'Wild Storm':
+                while True:
+                    if random.randint(0, 1):
+                        final_damage += base_damage
+                        message_buffer += "\nWild Storm succeeded! Attack repeated!"
+
+                    elif final_damage == base_damage:
+                        message_buffer += '\nWild Storm missed!'
+
+            if attack.special == 'Disable':
+                if not target.disabled:
+                    message_buffer += "%s HAS BEEN DISABLED!" % target.name
+                    target.disabled = True
+
+                else:
+                    message_buffer += "%s DODGED THE DISABLE!" % target.name
+
+            if attack.special == 'Recharge':
+                attacker.hp = min(attacker.hptotal, attacker.hp + 20)
+                message_buffer += "RECHARGE APPLIED TO %s!" % attacker.name
+
+        target.hp = max(0, target.hp - final_damage)
+
+        for c in self.clients:
+            connections[c].message(message_buffer)
+            connections[c].message('%s INFLICTED %i DAMAGE ON %s!' % (attacker.name, final_damage, target.name))
+
+            if target.hp <= 0:
+                connections[c].message('%s HAS FAINTED!' % target.name)
+
         return target
 
 class attack:
@@ -149,7 +210,7 @@ class attack:
         if len(attack_data) > 3:
             self.special = attack_data[3]
         else:
-            self.special = None
+            self.special = 'N/A'
 
 class pokemon:
     def __init__(self, pokemon_data_processed):
@@ -250,7 +311,7 @@ class client:
                             if rooms[message[0]].can_join():
                                 if len(message) == 1 + NUM_POKEMON:
                                     for pokemon_name in message[1:]:
-                                        self.pokemon_dict[pokemon_name] = pokemon_data[pokemon_name]
+                                        self.pokemon_dict[pokemon_name] = deepcopy(pokemon_data[pokemon_name])
 
                                     print(self.pokemon_dict)
 
@@ -290,6 +351,8 @@ class client:
 
                 if self.in_game and message_in == '2 // Ready':
                     print("Ready filtered")
+                elif len(message_in) == 0:
+                    print("Blank filtered")
                 else:
                     self.in_queue.put(message_in)
 
