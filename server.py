@@ -451,6 +451,8 @@ if __name__ == '__main__':
     rooms = {}
     connections = {}
 
+    PORT = random.randint(2000, 3000)
+
     print('STARTING RASTERA POKEMON SERVER')
     print(' | rastera.xyz')
     print(' | SERIES F2017')
