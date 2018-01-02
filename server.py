@@ -33,6 +33,8 @@ class room:
 
                     connections[self.clients[1]].message('Waiting for %s to finish their turn' % connections[self.clients[0]].name)
 
+                    broadcast_turn = False
+
                     while True:
 
                         if connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].hp <= 0:
@@ -54,8 +56,11 @@ class room:
                             action = ['Pass']
 
                         else:
-                            for c in self.clients:
-                                connections[c].message("----- %s's TURN! -----" % connections[self.clients[0]].name)
+                            if not broadcast_turn:
+                                for c in self.clients:
+                                    connections[c].message("----- %s's TURN! -----" % connections[self.clients[0]].name)
+
+                                broadcast_turn = True
 
                             action = connections[self.clients[0]].make_action()[1][0:]
 
@@ -141,7 +146,7 @@ class room:
     def attack_action(self, target, attacker, attack):
 
         base_damage = attack.damage
-        message_buffer = ''
+        message_buffer = ' '
 
         if attacker.disabled:
             base_damage = max(0, base_damage - 10)
@@ -149,10 +154,10 @@ class room:
         if base_damage > 0:
             if attacker.type == target.resistance:
                 base_damage *= 0.5
-                message_buffer += "IT'S NOT VERY EFFECTIVE!\n"
+                message_buffer += "IT'S NOT VERY EFFECTIVE!&n"
             elif attacker.type == target.weakness:
                 base_damage *= 2
-                message_buffer += "IT'S SUPER EFFECTIVE!\n"
+                message_buffer += "IT'S SUPER EFFECTIVE!&n"
 
         final_damage = base_damage
 
@@ -174,10 +179,10 @@ class room:
                 while True:
                     if random.randint(0, 1):
                         final_damage += base_damage
-                        message_buffer += "\nWild Storm succeeded! Attack repeated!"
+                        message_buffer += "&nWild Storm succeeded! Attack repeated!"
 
                     elif final_damage == base_damage:
-                        message_buffer += '\nWild Storm missed!'
+                        message_buffer += '&nWild Storm missed!'
 
             if attack.special == 'Disable':
                 if not target.disabled:
@@ -265,7 +270,7 @@ class client:
     def pokemon_update(self):
         update_data = self.selected_pokemon
         for pokemon_name in self.pokemon_dict:
-            update_data += ' // %s // %s // %s' % (pokemon_name, self.pokemon_dict[pokemon_name].hp, self.pokemon_dict[pokemon_name].energy)
+            update_data += ' // %s // %s // %s' % (pokemon_name, int(self.pokemon_dict[pokemon_name].hp), int(self.pokemon_dict[pokemon_name].energy))
         return update_data
 
     def make_action(self):
@@ -355,6 +360,7 @@ class client:
                     print("Blank filtered")
                 else:
                     self.in_queue.put(message_in)
+                    log_queue.put('IN: ' + message_in)
 
             except:
                 self.alive = False
@@ -365,6 +371,7 @@ class client:
             try:
                 message_out = self.out_queue.get()
                 print('Out:', message_out)
+                log_queue.put('OUT: ' + message_out)
                 conn.send(bytes(message_out + '\r\n', 'utf-8'))
             except:
                 self.alive = False
@@ -444,8 +451,6 @@ if __name__ == '__main__':
     rooms = {}
     connections = {}
 
-    PORT = random.randint(2000,3000)
-
     print('STARTING RASTERA POKEMON SERVER')
     print(' | rastera.xyz')
     print(' | SERIES F2017')
@@ -455,9 +460,9 @@ if __name__ == '__main__':
     server.bind((HOST, PORT))
     server.listen(1000)
 
-    #log_queue = Queue()
-    #log_process = Process(target=logger, args=(log_queue,))
-    #log_process.start()
+    log_queue = Queue()
+    log_process = Process(target=logger, args=(log_queue,))
+    log_process.start()
 
     # Creates client object for each incoming connection
     while True:

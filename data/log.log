@@ -1,1 +1,670 @@
 
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 65a8a82f
+IN: 1 // 65a8a82f // Charizard // Ninetales // Zapdos // Tentacool // Seaking // Clefable
+OUT: 1 // Success: Connected to room
+IN: 1 // 65a8a82f // Nidoran(F) // Poliwrath // Charmeleon // Dratini // Rattata // Ninetales
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Charmeleon
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Ninetales
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Charmeleon I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Charmeleon I CHOOSE YOU!
+OUT: 2 // Message // B: Ninetales I CHOOSE YOU!
+OUT: 2 // Message // B: Ninetales I CHOOSE YOU!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Ninetales // Charizard // 120 // 50 // Ninetales // 80 // 50 // Zapdos // 90 // 50 // Tentacool // 30 // 50 // Seaking // 70 // 50 // Clefable // 70 // 50
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Ninetales
+OUT: 2 // Draw // Ninetales
+OUT: 2 // Message // B: Ninetales, USE Lure!
+OUT: 2 // Message //  
+OUT: 2 // Message // B: Ninetales, USE Lure!
+OUT: 2 // Message //  
+OUT: 2 // Message // Ninetales INFLICTED 10 DAMAGE ON Charmeleon!
+OUT: 2 // Message // Ninetales INFLICTED 10 DAMAGE ON Charmeleon!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Charmeleon // Nidoran(F) // 60 // 50 // Poliwrath // 90 // 50 // Charmeleon // 70 // 50 // Dratini // 40 // 50 // Rattata // 30 // 50 // Ninetales // 80 // 50
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+IN: 2 // 0
+OUT: 2 // Draw // Charmeleon
+OUT: 2 // Draw // Charmeleon
+OUT: 2 // Message // Pokemon Trainer: Charmeleon, USE Slash!
+OUT: 2 // Message // Pokemon Trainer: Charmeleon, USE Slash!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Charmeleon INFLICTED 30 DAMAGE ON Ninetales!
+OUT: 2 // Message // Charmeleon INFLICTED 30 DAMAGE ON Ninetales!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Ninetales // Charizard // 120 // 50 // Ninetales // 50 // 30 // Zapdos // 90 // 50 // Tentacool // 30 // 50 // Seaking // 70 // 50 // Clefable // 70 // 50
+OUT: 2 // Draw // Ninetales
+OUT: 2 // Draw // Ninetales
+OUT: 2 // Message // B: Ninetales, USE Lure!
+OUT: 2 // Message //  
+OUT: 2 // Message // Ninetales INFLICTED 10 DAMAGE ON Charmeleon!
+OUT: 2 // Message // B: Ninetales, USE Lure!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message //  
+OUT: 2 // Message // Ninetales INFLICTED 10 DAMAGE ON Charmeleon!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Charmeleon // Nidoran(F) // 60 // 50 // Poliwrath // 90 // 50 // Charmeleon // 60 // 20 // Dratini // 40 // 50 // Rattata // 30 // 50 // Ninetales // 80 // 50
+IN: 2 // 0
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Charmeleon // Nidoran(F) // 60 // 50 // Poliwrath // 90 // 50 // Charmeleon // 60 // 20 // Dratini // 40 // 50 // Rattata // 30 // 50 // Ninetales // 80 // 50
+IN: 2 // Pass
+IN: 2 // Pass
+IN: 2 // Pass
+OUT: 2 // Message // Pokemon Trainer passed their turn
+OUT: 2 // Message // Pokemon Trainer passed their turn
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Ninetales // Charizard // 120 // 50 // Ninetales // 50 // 10 // Zapdos // 90 // 50 // Tentacool // 30 // 50 // Seaking // 70 // 50 // Clefable // 70 // 50
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Charmeleon // Nidoran(F) // 60 // 50 // Poliwrath // 90 // 50 // Charmeleon // 60 // 20 // Dratini // 40 // 50 // Rattata // 30 // 50 // Ninetales // 80 // 50
+IN: 2 // 1
+IN: 3000 // Pokemon Trainer
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // ac7be85d
+OUT: 0 // 83344671
+IN: 1 // 83344671 // Parasect // Aerodactyl // Adam // Rhydon // Arcanine // Exeggutor
+IN: 1 // 83344671 // Keith // Gloom // Articuno // Horsea // Ponyta // Voltorb
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Parasect
+IN: 2 // InitPkmn // Keith
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Keith I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Parasect I CHOOSE YOU!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Keith I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Parasect I CHOOSE YOU!
+OUT: 2 // MakeAction // Parasect // Parasect // 60 // 50 // Aerodactyl // 60 // 50 // Adam // 999 // 50 // Rhydon // 100 // 50 // Arcanine // 100 // 50 // Exeggutor // 80 // 50
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Parasect
+OUT: 2 // Draw // Parasect
+OUT: 2 // Message // Pokemon Trainer: Parasect, USE Spore!
+OUT: 2 // Message //  
+OUT: 2 // Message // Parasect INFLICTED 10 DAMAGE ON Keith!
+OUT: 2 // Message // Pokemon Trainer: Parasect, USE Spore!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Keith // Keith // 989 // 50 // Gloom // 60 // 50 // Articuno // 70 // 50 // Horsea // 40 // 50 // Ponyta // 40 // 50 // Voltorb // 40 // 50
+OUT: 2 // Message //  
+OUT: 2 // Message // Parasect INFLICTED 10 DAMAGE ON Keith!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+IN: 2 // 0
+OUT: 2 // Draw // Keith
+OUT: 2 // Draw // Keith
+OUT: 2 // Message // Pokemon Trainer: Keith, USE Blessing!
+OUT: 2 // Message //  
+OUT: 2 // Message // Keith INFLICTED 999 DAMAGE ON Parasect!
+OUT: 2 // Message // Pokemon Trainer: Keith, USE Blessing!
+OUT: 2 // Message //  
+OUT: 2 // Message // Keith INFLICTED 999 DAMAGE ON Parasect!
+OUT: 2 // Message // Parasect HAS FAINTED!
+OUT: 2 // Message // Parasect HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // MakeChoose // Parasect // Parasect // 0 // 30 // Aerodactyl // 60 // 50 // Adam // 999 // 50 // Rhydon // 100 // 50 // Arcanine // 100 // 50 // Exeggutor // 80 // 50
+OUT: 2 // Result // Engine Error
+OUT: 2 // Result // Engine Error
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // 0
+IN: 2 // Ready
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // Retreat // Exeggutor
+IN: 3000 // Pokemon Trainer
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // 8c481a2c
+OUT: 0 // e7f5df83
+IN: 1 // e7f5df83 // Arbok // Oddish // Gengar // Diglett // Graveler // Kabuto
+IN: 1 // e7f5df83 // Ponyta // Koffing // Golduck // Parasect // Hitmonlee // Lickitung
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Golduck
+IN: 2 // InitPkmn // Gengar
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Pokemon Trainer: Gengar I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Golduck I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Golduck // Ponyta // 40 // 50 // Koffing // 50 // 50 // Golduck // 70 // 50 // Parasect // 60 // 50 // Hitmonlee // 60 // 50 // Lickitung // 90 // 50
+OUT: 2 // Message // Pokemon Trainer: Gengar I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Golduck I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message // Pokemon Trainer: Golduck, USE Hyper Beam!
+OUT: 2 // Message //  
+OUT: 2 // Message // Golduck INFLICTED 20 DAMAGE ON Gengar!
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // Pokemon Trainer: Golduck, USE Hyper Beam!
+OUT: 2 // Message //  
+OUT: 2 // Message // Golduck INFLICTED 20 DAMAGE ON Gengar!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Gengar // Arbok // 60 // 50 // Oddish // 50 // 50 // Gengar // 60 // 50 // Diglett // 30 // 50 // Graveler // 60 // 50 // Kabuto // 30 // 50
+IN: 2 // 1
+IN: 2 // 0
+OUT: 2 // Draw // Gengar
+OUT: 2 // Message // Pokemon Trainer: Gengar, USE Dark Mind!
+OUT: 2 // Draw // Gengar
+OUT: 2 // Message //  
+OUT: 2 // Message // Pokemon Trainer: Gengar, USE Dark Mind!
+OUT: 2 // Message // Gengar INFLICTED 30 DAMAGE ON Golduck!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message //  
+OUT: 2 // Message // Gengar INFLICTED 30 DAMAGE ON Golduck!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Golduck // Ponyta // 40 // 50 // Koffing // 50 // 50 // Golduck // 40 // 20 // Parasect // 60 // 50 // Hitmonlee // 60 // 50 // Lickitung // 90 // 50
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Golduck // Ponyta // 40 // 50 // Koffing // 50 // 50 // Golduck // 40 // 20 // Parasect // 60 // 50 // Hitmonlee // 60 // 50 // Lickitung // 90 // 50
+IN: 2 // 0
+IN: 2 // 1
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Golduck // Ponyta // 40 // 50 // Koffing // 50 // 50 // Golduck // 40 // 20 // Parasect // 60 // 50 // Hitmonlee // 60 // 50 // Lickitung // 90 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message // Pokemon Trainer: Golduck, USE Psyshock!
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message //  
+OUT: 2 // Message // Pokemon Trainer: Golduck, USE Psyshock!
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Gengar!
+OUT: 2 // Message //  
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Gengar!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Gengar // Arbok // 60 // 50 // Oddish // 50 // 50 // Gengar // 50 // 20 // Diglett // 30 // 50 // Graveler // 60 // 50 // Kabuto // 30 // 50
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Gengar // Arbok // 60 // 50 // Oddish // 50 // 50 // Gengar // 50 // 20 // Diglett // 30 // 50 // Graveler // 60 // 50 // Kabuto // 30 // 50
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // 57260066
+OUT: 0 // 8916754e
+IN: 1 // 57260066 // Hitmonlee // Mankey // Karl // Grimer // Goldeen // Butterfree
+IN: 1 // 57260066 // Beedrill // Geodude // Kabutops // Seel // Graveler // Poliwag
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Beedrill
+IN: 2 // InitPkmn // Hitmonlee
+OUT: 2 // Success: Pokemon Registered
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Pokemon Trainer: Hitmonlee I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Beedrill I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Beedrill // Beedrill // 80 // 50 // Geodude // 50 // 50 // Kabutops // 60 // 50 // Seel // 60 // 50 // Graveler // 60 // 50 // Poliwag // 40 // 50
+OUT: 2 // Message // Pokemon Trainer: Hitmonlee I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Beedrill I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Beedrill
+OUT: 2 // Draw // Beedrill
+OUT: 2 // Message // Pokemon Trainer: Beedrill, USE Poison Sting!
+OUT: 2 // Message // Pokemon Trainer: Beedrill, USE Poison Sting!
+OUT: 2 // Message //  
+OUT: 2 // Message // Beedrill INFLICTED 40 DAMAGE ON Hitmonlee!
+OUT: 2 // Message //  
+OUT: 2 // Message // Beedrill INFLICTED 40 DAMAGE ON Hitmonlee!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Hitmonlee // Hitmonlee // 20 // 50 // Mankey // 30 // 50 // Karl // 69 // 50 // Grimer // 50 // 50 // Goldeen // 40 // 50 // Butterfree // 70 // 50
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Hitmonlee
+OUT: 2 // Draw // Hitmonlee
+OUT: 2 // Message // Pokemon Trainer: Hitmonlee, USE Stretch Kick!
+OUT: 2 // Message //  IT'S NOT VERY EFFECTIVE!&n
+OUT: 2 // Message // Hitmonlee INFLICTED 5 DAMAGE ON Beedrill!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Beedrill // Beedrill // 75.0 // 20 // Geodude // 50 // 50 // Kabutops // 60 // 50 // Seel // 60 // 50 // Graveler // 60 // 50 // Poliwag // 40 // 50
+OUT: 2 // Message // Pokemon Trainer: Hitmonlee, USE Stretch Kick!
+OUT: 2 // Message //  IT'S NOT VERY EFFECTIVE!&n
+OUT: 2 // Message // Hitmonlee INFLICTED 5 DAMAGE ON Beedrill!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 3000 // [A
+IN: 3000 // [A
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // 1d2c9464
+OUT: 0 // c899fed5
+IN: 1 // 1d2c9464 // Cubone // Poliwhirl // Caterpie // Exeggcute // Kabuto // Grimer
+IN: 1 // 1d2c9464 // Marowak // Tangela // Drowzee // Scyther // Exeggcute // Pidgeotto
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Poliwhirl
+IN: 2 // InitPkmn // Tangela
+OUT: 2 // Success: Pokemon Registered
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // [A: Poliwhirl I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&n[A&nvs&n[A&n----------&n&nStart battle!&n
+OUT: 2 // Message // [A: Tangela I CHOOSE YOU!
+OUT: 2 // Message // ----- [A's TURN! -----
+OUT: 2 // MakeAction // Tangela // Marowak // 60 // 50 // Tangela // 50 // 50 // Drowzee // 50 // 50 // Scyther // 70 // 50 // Exeggcute // 50 // 50 // Pidgeotto // 60 // 50
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&n[A&nvs&n[A&n----------&n&nStart battle!&n
+OUT: 2 // Message // [A: Poliwhirl I CHOOSE YOU!
+OUT: 2 // Message // [A: Tangela I CHOOSE YOU!
+OUT: 2 // Message // Waiting for [A to finish their turn
+OUT: 2 // Message // ----- [A's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Tangela
+OUT: 2 // Draw // Tangela
+OUT: 2 // Message // [A: Tangela, USE Poisonpowder!
+OUT: 2 // Message //  IT'S SUPER EFFECTIVE!&n
+OUT: 2 // Message // Tangela INFLICTED 40 DAMAGE ON Poliwhirl!
+OUT: 2 // Message // ----- [A's TURN! -----
+OUT: 2 // MakeAction // Poliwhirl // Cubone // 40 // 50 // Poliwhirl // 20 // 50 // Caterpie // 40 // 50 // Exeggcute // 50 // 50 // Kabuto // 30 // 50 // Grimer // 50 // 50
+OUT: 2 // Message // [A: Tangela, USE Poisonpowder!
+OUT: 2 // Message //  IT'S SUPER EFFECTIVE!&n
+OUT: 2 // Message // Tangela INFLICTED 40 DAMAGE ON Poliwhirl!
+OUT: 2 // Message // Waiting for [A to finish their turn
+OUT: 2 // Message // ----- [A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Poliwhirl
+OUT: 2 // Draw // Poliwhirl
+OUT: 2 // Message // [A: Poliwhirl, USE Amnesia!
+OUT: 2 // Message //  
+OUT: 2 // Message // Poliwhirl INFLICTED 10 DAMAGE ON Tangela!
+OUT: 2 // Message // ----- [A's TURN! -----
+OUT: 2 // MakeAction // Tangela // Marowak // 60 // 50 // Tangela // 40 // 20 // Drowzee // 50 // 50 // Scyther // 70 // 50 // Exeggcute // 50 // 50 // Pidgeotto // 60 // 50
+OUT: 2 // Message // [A: Poliwhirl, USE Amnesia!
+OUT: 2 // Message //  
+OUT: 2 // Message // Poliwhirl INFLICTED 10 DAMAGE ON Tangela!
+OUT: 2 // Message // Waiting for [A to finish their turn
+OUT: 2 // Message // ----- [A's TURN! -----
+IN: 2 // Back
+OUT: 2 // MakeAction // Tangela // Marowak // 60 // 50 // Tangela // 40 // 20 // Drowzee // 50 // 50 // Scyther // 70 // 50 // Exeggcute // 50 // 50 // Pidgeotto // 60 // 50
+IN: 2 // Retreat // Pidgeotto
+OUT: 2 // Message // [A retreated and switched to Pidgeotto&n[A: Pidgeotto I CHOOSE YOU!
+OUT: 2 // Message // [A retreated and switched to Pidgeotto&n[A: Pidgeotto I CHOOSE YOU!
+OUT: 2 // Message // Waiting for [A to finish their turn
+OUT: 2 // Message // ----- [A's TURN! -----
+OUT: 2 // Message // ----- [A's TURN! -----
+OUT: 2 // MakeAction // Poliwhirl // Cubone // 40 // 50 // Poliwhirl // 20 // 30 // Caterpie // 40 // 50 // Exeggcute // 50 // 50 // Kabuto // 30 // 50 // Grimer // 50 // 50
+IN: 2 // Pass
+OUT: 2 // Message // [A passed their turn
+OUT: 2 // Message // [A passed their turn
+OUT: 2 // Message // ----- [A's TURN! -----
+OUT: 2 // Message // Waiting for [A to finish their turn
+OUT: 2 // Message // ----- [A's TURN! -----
+OUT: 2 // MakeAction // Pidgeotto // Marowak // 60 // 50 // Tangela // 40 // 20 // Drowzee // 50 // 50 // Scyther // 70 // 50 // Exeggcute // 50 // 50 // Pidgeotto // 60 // 50
+IN: 2 // 1
+OUT: 2 // Result // Engine Error
+OUT: 2 // Result // Engine Error
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 5972f513
+IN: 1 // 5972f513 // Pikachu // Articuno // Tauros // Pidgeotto // Onix // Gyrados
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Pikachu
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 1 // 5972f513 // Henry // Dratini // Articuno // Pinsir // Doduo // Kabuto
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Henry
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Pokemon Trainer: Henry I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Pikachu I CHOOSE YOU!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // MakeAction // Pikachu // Pikachu // 40 // 50 // Articuno // 70 // 50 // Tauros // 60 // 50 // Pidgeotto // 60 // 50 // Onix // 90 // 50 // Gyrados // 100 // 50
+OUT: 2 // Message // Pokemon Trainer: Henry I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Pikachu I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Pikachu
+OUT: 2 // Draw // Pikachu
+OUT: 2 // Message // Pokemon Trainer: Pikachu, USE Thunder Jolt!
+OUT: 2 // Message //  IT'S NOT VERY EFFECTIVE!&n
+OUT: 2 // Message // Pikachu INFLICTED 15 DAMAGE ON Henry!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Henry // Henry // 984 // 50 // Dratini // 40 // 50 // Articuno // 70 // 50 // Pinsir // 60 // 50 // Doduo // 50 // 50 // Kabuto // 30 // 50
+OUT: 2 // Message // Pokemon Trainer: Pikachu, USE Thunder Jolt!
+OUT: 2 // Message //  IT'S NOT VERY EFFECTIVE!&n
+OUT: 2 // Message // Pikachu INFLICTED 15 DAMAGE ON Henry!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Henry
+OUT: 2 // Draw // Henry
+OUT: 2 // Message // Pokemon Trainer: Henry, USE Linux!
+OUT: 2 // Message //  
+OUT: 2 // Message // Henry INFLICTED 999 DAMAGE ON Pikachu!
+OUT: 2 // Message // Pokemon Trainer: Henry, USE Linux!
+OUT: 2 // Message //  
+OUT: 2 // Message // Henry INFLICTED 999 DAMAGE ON Pikachu!
+OUT: 2 // Message // Pikachu HAS FAINTED!
+OUT: 2 // Message // Pikachu HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // MakeChoose // Pikachu // Pikachu // 0 // 30 // Articuno // 70 // 50 // Tauros // 60 // 50 // Pidgeotto // 60 // 50 // Onix // 90 // 50 // Gyrados // 100 // 50
+IN: 2 // Retreat // Pidgeotto
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Pidgeotto&nPokemon Trainer: Pidgeotto I CHOOSE YOU!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Henry // Henry // 984 // 0 // Dratini // 40 // 50 // Articuno // 70 // 50 // Pinsir // 60 // 50 // Doduo // 50 // 50 // Kabuto // 30 // 50
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Pidgeotto&nPokemon Trainer: Pidgeotto I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // Retreat // Dratini
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Dratini&nPokemon Trainer: Dratini I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Dratini&nPokemon Trainer: Dratini I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Pidgeotto // Articuno // 70 // 50 // Tauros // 60 // 50 // Pidgeotto // 60 // 50 // Onix // 90 // 50 // Gyrados // 100 // 50
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Pidgeotto
+OUT: 2 // Draw // Pidgeotto
+OUT: 2 // Message // Pokemon Trainer: Pidgeotto, USE Whirlwind!
+OUT: 2 // Message //  
+OUT: 2 // Message // Pidgeotto INFLICTED 20 DAMAGE ON Dratini!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // Pokemon Trainer: Pidgeotto, USE Whirlwind!
+OUT: 2 // Message //  
+OUT: 2 // Message // Pidgeotto INFLICTED 20 DAMAGE ON Dratini!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Dratini // Henry // 984 // 0 // Dratini // 20 // 50 // Articuno // 70 // 50 // Pinsir // 60 // 50 // Doduo // 50 // 50 // Kabuto // 30 // 50
+IN: 3000 // Henry
+OUT: 3000 // DOCTYPE!
+IN: 3000 // Two
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // e2a6bb06
+IN: 1 // e2a6bb06 // Ryan // Slowbro // Rhyhorn // Mew // Kakuna // Geodude
+OUT: 1 // Success: Connected to room
+IN: 1 // e2a6bb06 // Kangashkhan // Magikarp // Dratini // Tentacool // Machamp // Starmie
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Magikarp
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Ryan
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Henry: Ryan I CHOOSE YOU!
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Two: Magikarp I CHOOSE YOU!
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nHenry&nvs&nTwo&n----------&n&nStart battle!&n
+OUT: 2 // MakeAction // Magikarp // Kangashkhan // 90 // 50 // Magikarp // 30 // 50 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nTwo&nvs&nHenry&n----------&n&nStart battle!&n
+OUT: 2 // Message // Henry: Ryan I CHOOSE YOU!
+OUT: 2 // Message // Two: Magikarp I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // ----- Two's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Magikarp
+OUT: 2 // Message // Two: Magikarp, USE Flail!
+OUT: 2 // Draw // Magikarp
+OUT: 2 // Message //  
+OUT: 2 // Message // Two: Magikarp, USE Flail!
+OUT: 2 // Message //  
+OUT: 2 // Message // Magikarp INFLICTED 10 DAMAGE ON Ryan!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Ryan // Ryan // 989 // 50 // Slowbro // 60 // 50 // Rhyhorn // 70 // 50 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // Message // Magikarp INFLICTED 10 DAMAGE ON Ryan!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Ryan
+OUT: 2 // Draw // Ryan
+OUT: 2 // Message // Henry: Ryan, USE You do realize?!
+OUT: 2 // Message // Henry: Ryan, USE You do realize?!
+OUT: 2 // Message //  
+OUT: 2 // Message // Ryan INFLICTED 999 DAMAGE ON Magikarp!
+OUT: 2 // Message //  
+OUT: 2 // Message // Magikarp HAS FAINTED!
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // Ryan INFLICTED 999 DAMAGE ON Magikarp!
+OUT: 2 // Message // Magikarp HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Magikarp // Kangashkhan // 90 // 50 // Magikarp // 0 // 40 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+IN: 2 // Retreat // Kangashkhan
+OUT: 2 // Message // Two retreated and switched to Kangashkhan&nTwo: Kangashkhan I CHOOSE YOU!
+OUT: 2 // Message // Two retreated and switched to Kangashkhan&nTwo: Kangashkhan I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Ryan // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 70 // 50 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+IN: 2 // Retreat // Rhyhorn
+OUT: 2 // Message // Henry retreated and switched to Rhyhorn&nHenry: Rhyhorn I CHOOSE YOU!
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // MakeAction // Kangashkhan // Kangashkhan // 90 // 50 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+OUT: 2 // Message // Henry retreated and switched to Rhyhorn&nHenry: Rhyhorn I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // ----- Two's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Kangashkhan
+OUT: 2 // Draw // Kangashkhan
+OUT: 2 // Message // Two: Kangashkhan, USE Fetch!
+OUT: 2 // Message // Two: Kangashkhan, USE Fetch!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Kangashkhan INFLICTED 10 DAMAGE ON Rhyhorn!
+OUT: 2 // Message // Kangashkhan INFLICTED 10 DAMAGE ON Rhyhorn!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 60 // 50 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message //  
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Kangashkhan!
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // Message //  
+OUT: 2 // MakeAction // Kangashkhan // Kangashkhan // 90 // 40 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Kangashkhan!
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // ----- Two's TURN! -----
+IN: 2 // Pass
+OUT: 2 // Message // Two passed their turn
+OUT: 2 // Message // Two passed their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 60 // 40 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // Pass
+OUT: 2 // Message // Henry passed their turn
+OUT: 2 // Message // Henry passed their turn
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // MakeAction // Kangashkhan // Kangashkhan // 90 // 40 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+IN: 2 // Pass
+OUT: 2 // Message // Two passed their turn
+OUT: 2 // Message // Two passed their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 60 // 40 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // Info
+OUT: 2 // Info // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 60 // 40 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 60 // 40 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+IN: 2 // Pass
+OUT: 2 // Message // Henry passed their turn
+OUT: 2 // Message // Henry passed their turn
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // MakeAction // Kangashkhan // Kangashkhan // 90 // 40 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+IN: 2 // Info
+OUT: 2 // Info // Kangashkhan // Kangashkhan // 90 // 40 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+OUT: 2 // MakeAction // Kangashkhan // Kangashkhan // 90 // 40 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+IN: 2 // 1
+OUT: 2 // Draw // Kangashkhan
+OUT: 2 // Draw // Kangashkhan
+OUT: 2 // Message // Two: Kangashkhan, USE Comet Punch!
+OUT: 2 // Message // Two: Kangashkhan, USE Comet Punch!
+OUT: 2 // Message //  
+OUT: 2 // Message // Kangashkhan INFLICTED 20 DAMAGE ON Rhyhorn!
+OUT: 2 // Message //  
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Kangashkhan INFLICTED 20 DAMAGE ON Rhyhorn!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 40 // 40 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Kangashkhan!
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Kangashkhan!
+OUT: 2 // MakeAction // Kangashkhan // Kangashkhan // 90 // 0 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // ----- Two's TURN! -----
+IN: 2 // 0
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Kangashkhan // Kangashkhan // 90 // 0 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+IN: 2 // Retreat // Starmie
+OUT: 2 // Message // Two retreated and switched to Starmie&nTwo: Starmie I CHOOSE YOU!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Two retreated and switched to Starmie&nTwo: Starmie I CHOOSE YOU!
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 40 // 30 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Starmie!
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Starmie!
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // MakeAction // Starmie // Kangashkhan // 90 // 0 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 50
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // Message // ----- Two's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Starmie
+OUT: 2 // Draw // Starmie
+OUT: 2 // Message // Two: Starmie, USE Recover!
+OUT: 2 // Message //  
+OUT: 2 // Message // Two: Starmie, USE Recover!
+OUT: 2 // Message // Starmie INFLICTED 0 DAMAGE ON Rhyhorn!
+OUT: 2 // Message //  
+OUT: 2 // Message // Starmie INFLICTED 0 DAMAGE ON Rhyhorn!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 40 // 20 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Message // Henry: Rhyhorn, USE Leer!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Starmie!
+OUT: 2 // Message // Rhyhorn INFLICTED 0 DAMAGE ON Starmie!
+OUT: 2 // Message // ----- Two's TURN! -----
+OUT: 2 // Message // Waiting for Two to finish their turn
+OUT: 2 // MakeAction // Starmie // Kangashkhan // 90 // 0 // Dratini // 40 // 50 // Tentacool // 30 // 50 // Machamp // 100 // 50 // Starmie // 60 // 30
+OUT: 2 // Message // ----- Two's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Starmie
+OUT: 2 // Draw // Starmie
+OUT: 2 // Message // Two: Starmie, USE Recover!
+OUT: 2 // Message // Two: Starmie, USE Recover!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Starmie INFLICTED 0 DAMAGE ON Rhyhorn!
+OUT: 2 // Message // Starmie INFLICTED 0 DAMAGE ON Rhyhorn!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 40 // 10 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
+OUT: 2 // Message // ----- Henry's TURN! -----
