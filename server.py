@@ -11,6 +11,7 @@ from queue import *
 from multiprocessing import *
 import random
 from copy import *
+import time
 from math import *
 
 class room:
@@ -19,6 +20,7 @@ class room:
         self.clients = []
         self.game_running = True
         self.shuffled = False
+        self.death_time = int(time.time() + 3600)
 
         self.engine_thread = threading.Thread(target=self.engine)
         self.engine_thread.start()
@@ -26,11 +28,12 @@ class room:
     def engine(self):
         while self.game_running:
             try:
+                if int(time.time()) >= self.death_time:
+                    self.game_running = False
+
                 if not self.can_join() and self.client_ready():
 
-                    if self.check_win():
-                        break
-
+                    self.death_time = int(time.time() + 3600)
                     self.set_turn()
 
                     print(self.clients)
@@ -41,6 +44,11 @@ class room:
 
                     while True:
 
+                        if not broadcast_turn:
+                            for c in self.clients:
+                                connections[c].message("----- %s's TURN! -----" % connections[self.clients[0]].name)
+                            broadcast_turn = True
+
                         if connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].hp <= 0:
 
                             connections[self.clients[0]].message("Your Pokemon has fainted! You must pick a replacement to continue fighting!")
@@ -49,7 +57,9 @@ class room:
                             del connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon]
 
                             if len(connections[self.clients[0]].pokemon_dict) == 0:
-                                    self.game_running = False
+                                connections[self.clients[0]].result('YOU LOSE!')
+                                connections[self.clients[1]].result('YOU WIN!')
+                                self.game_running = False
 
                         elif connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned:
                             connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned = False
@@ -60,12 +70,6 @@ class room:
                             action = ['Pass']
 
                         else:
-                            if not broadcast_turn:
-                                for c in self.clients:
-                                    connections[c].message("----- %s's TURN! -----" % connections[self.clients[0]].name)
-
-                                broadcast_turn = True
-
                             action = connections[self.clients[0]].make_action()[1][0:]
 
                         print(action)
@@ -73,7 +77,7 @@ class room:
                         if action:
                             if action[0] == 'Pass':
                                 for c in self.clients:
-                                    connections[c].message("%s passed their turn" % connections[self.clients[0]].name)
+                                    connections[c].message("%s passed their turn&n" % connections[self.clients[0]].name)
 
                                 break
 
@@ -81,7 +85,7 @@ class room:
                                 connections[self.clients[0]].selected_pokemon = action[1]
 
                                 for c in self.clients:
-                                    connections[c].message("%s retreated and switched to %s&n%s: %s I CHOOSE YOU!" % (connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon, connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon))
+                                    connections[c].message("%s retreated and switched to %s&n%s: %s I CHOOSE YOU!&n" % (connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon, connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon))
 
                                 break
 
@@ -113,21 +117,7 @@ class room:
                     connections[c].in_game = False
                     connections[c].result('Engine Error')
 
-        self.__del__()
-
-    def check_win(self):
-        if len(connections[self.clients[0]].pokemon_dict) == 0:
-            connections[self.clients[0]].result('YOU LOSE!')
-            connections[self.clients[1]].result('YOU WIN!')
-            return True
-
-        elif len(connections[self.clients[1]].pokemon_dict) == 0:
-            connections[self.clients[0]].result('YOU WIN!')
-            connections[self.clients[1]].result('YOU LOSE!')
-            return True
-
-        return False
-
+        garbage_queue.put(['room', self.code])
 
     def set_turn(self):
 
@@ -169,10 +159,11 @@ class room:
     def attack_action(self, target, attacker, attack):
 
         base_damage = attack.damage
-        message_buffer = ' '
+        message_buffer = ''
 
         if attacker.disabled:
             base_damage = max(0, base_damage - 10)
+            message_buffer += "DAMAGE REDUCED TO %i DUE TO DISABLE!&n" % base_damage
 
         if base_damage > 0:
             if attacker.type == target.resistance:
@@ -184,49 +175,54 @@ class room:
 
         final_damage = base_damage
 
-        if attack.special != 'N/A' and random.randint(0, 1):
-            if attack.special == 'Stun':
+        if attack.special != 'N/A':
+            if attack.special == 'stun':
                 if random.randint(0, 1):
                     target.stunned = True
-                    message_buffer += "%s HAS BEEN STUNNED!" % target.name
+                    message_buffer += "%s HAS BEEN STUNNED!&n" % target.name
 
                 else:
-                    message_buffer += "%s DODGED THE STUN!" % target.name
+                    message_buffer += "%s DODGED THE STUN!&n" % target.name
 
-            if attack.special == 'Wild Card':
+            if attack.special == 'wild card':
                 if random.randint(0, 1):
                     final_damage = 0
-                    message_buffer = "%s MISSED! NO DAMAGE INFLICTED!" % attacker.name
+                    message_buffer = "%s MISSED! NO DAMAGE INFLICTED!&n" % attacker.name
 
-            if attack.special == 'Wild Storm':
+            if attack.special == 'wild storm':
                 while True:
                     if random.randint(0, 1):
                         final_damage += base_damage
-                        message_buffer += "&nWild Storm succeeded! Attack repeated!"
+                        message_buffer += "Wild Storm succeeded! Attack repeated!&n"
 
                     elif final_damage == base_damage:
-                        message_buffer += '&nWild Storm missed!'
+                        message_buffer += 'Wild Storm missed!&n'
+                        break
 
-            if attack.special == 'Disable':
+            if attack.special == 'disable':
                 if not target.disabled:
-                    message_buffer += "%s HAS BEEN DISABLED!" % target.name
+                    message_buffer += "%s HAS BEEN DISABLED!&n" % target.name
                     target.disabled = True
 
                 else:
-                    message_buffer += "%s DODGED THE DISABLE!" % target.name
+                    message_buffer += "%s DODGED THE DISABLE!&n" % target.name
 
-            if attack.special == 'Recharge':
+            if attack.special == 'recharge':
                 attacker.hp = min(attacker.hptotal, attacker.hp + 20)
-                message_buffer += "RECHARGE APPLIED TO %s!" % attacker.name
+                message_buffer += "RECHARGE APPLIED TO %s!&n" % attacker.name
 
         target.hp = max(0, target.hp - final_damage)
 
+        message_buffer += '%s INFLICTED %i DAMAGE ON %s!&n' % (attacker.name, final_damage, target.name)
+
+        if target.hp <= 0:
+            message_buffer += '%s HAS FAINTED!&n' % target.name
+
+        if len(message_buffer) == 0:
+            message_buffer = ' '
+
         for c in self.clients:
             connections[c].message(message_buffer)
-            connections[c].message('%s INFLICTED %i DAMAGE ON %s!' % (attacker.name, final_damage, target.name))
-
-            if target.hp <= 0:
-                connections[c].message('%s HAS FAINTED!' % target.name)
 
         return target
 
@@ -266,6 +262,7 @@ class client:
         self.pokemon_dict = {}
         self.selected_pokemon = ''
         self.client_id = client_id
+        self.death_time = int(time.time() + 3600)
 
         self.alive = True
         self.in_game = False
@@ -319,6 +316,9 @@ class client:
     def service(self):
         while self.alive:
             try:
+                if int(time.time()) >= self.death_time:
+                    self.alive = False
+
                 if not self.in_game:
                     code, message = self.com_get()
 
@@ -338,13 +338,16 @@ class client:
                         if message[0] in rooms:  # Check if it's valid
                             if rooms[message[0]].can_join():
                                 if len(message) == 1 + NUM_POKEMON:
-                                    for pokemon_name in message[1:]:
-                                        self.pokemon_dict[pokemon_name] = deepcopy(pokemon_data[pokemon_name])
+                                    if rooms[message[0]].game_running:
+                                        for pokemon_name in message[1:]:
+                                            self.pokemon_dict[pokemon_name] = deepcopy(pokemon_data[pokemon_name])
 
-                                    print(self.pokemon_dict)
+                                        print(self.pokemon_dict)
 
-                                    rooms[message[0]].join(self.client_id)
-                                    self.out_queue.put('1 // Success: Connected to room')
+                                        rooms[message[0]].join(self.client_id)
+                                        self.out_queue.put('1 // Success: Connected to room')
+                                    else:
+                                        self.out_queue.put('-1 // Error: Room Killed')
                                 else:
                                     self.out_queue.put('-1 // Error: Invalid Data')
                             else:
@@ -368,7 +371,7 @@ class client:
         try:
             print('Client Disconnected')
             conn.send(bytes('-1 // Server Closed\r\n', 'utf-8'))
-            self.__del__()
+            garbage_queue.put(['client', self.client_id])
         except:
             pass
 
@@ -386,6 +389,7 @@ class client:
                     self.in_queue.put(message_in)
                     log_queue.put('IN: ' + message_in)
 
+                self.death_time = int(time.time() + 3600)
             except:
                 self.alive = False
                 print(traceback.format_exc())
@@ -397,6 +401,8 @@ class client:
                 print('Out:', message_out)
                 log_queue.put('OUT: ' + message_out)
                 conn.send(bytes(message_out + '\r\n', 'utf-8'))
+
+                self.death_time = int(time.time() + 3600)
             except:
                 self.alive = False
                 print(traceback.format_exc())
@@ -436,6 +442,21 @@ def get_pokemon(pokemon_list):
             stat_dict[pokemon_name] = pokemon_data[pokemon_name]
 
     return stat_dict
+
+def garbage():
+    while True:
+        try:
+            data = garbage_queue.get()
+
+            if data[0] == 'client':
+                del connections[data[1]]
+            elif data[1] == 'room':
+                del rooms[data[1]]
+
+            print('Destroyed', data[0], data[1])
+
+        except:
+            print(traceback.format_exc())
 
 # A function used to write the server log to a file to help with server debugging
 def logger(log_queue):
@@ -485,6 +506,10 @@ if __name__ == '__main__':
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  # Start TCP server
     server.bind((HOST, PORT))
     server.listen(1000)
+
+    garbage_queue = Queue()
+    garbage_thread = threading.Thread(target=garbage)
+    garbage_thread.start()
 
     log_queue = Queue()
     log_process = Process(target=logger, args=(log_queue,))

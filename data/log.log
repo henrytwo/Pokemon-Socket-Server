@@ -2224,3 +2224,379 @@ OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to co
 OUT: 2 // Message // Weedle HAS FAINTED!
 OUT: 2 // MakeChoose // Weedle // Weedle // 0 // 50
 OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+IN: 3000 // A
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // 4ea8faa7
+OUT: 0 // 640ac7c6
+IN: 1 // 640ac7c6 // Jerry // Mew // Butterfree // Pidgeotto // Magneton // Oddish
+IN: 1 // 640ac7c6 // Mr_Mime // Rhyhorn // Cubone // Psyduck // Machoke // Bulbasaur
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Mr_Mime
+IN: 2 // InitPkmn // Jerry
+OUT: 2 // Success: Pokemon Registered
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Mr_Mime I CHOOSE YOU!
+OUT: 2 // Message // A: Jerry I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // B: Mr_Mime I CHOOSE YOU!
+OUT: 2 // MakeAction // Jerry // Jerry // 999 // 50 // Mew // 50 // 50 // Butterfree // 70 // 50 // Pidgeotto // 60 // 50 // Magneton // 60 // 50 // Oddish // 50 // 50
+OUT: 2 // Message // A: Jerry I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Jerry
+OUT: 2 // Draw // Jerry
+OUT: 2 // Message // A: Jerry, USE Charming Looks!
+OUT: 2 // Message // A: Jerry, USE Charming Looks!
+OUT: 2 // Message //  Mr_Mime HAS BEEN DISABLED!&nJerry INFLICTED 999 DAMAGE ON Mr_Mime!&nMr_Mime HAS FAINTED!&n
+OUT: 2 // Message //  Mr_Mime HAS BEEN DISABLED!&nJerry INFLICTED 999 DAMAGE ON Mr_Mime!&nMr_Mime HAS FAINTED!&n
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeChoose // Mr_Mime // Mr_Mime // 0 // 50 // Rhyhorn // 70 // 50 // Cubone // 40 // 50 // Psyduck // 50 // 50 // Machoke // 80 // 50 // Bulbasaur // 40 // 50
+IN: 2 // Retreat // Rhyhorn
+OUT: 2 // Message // B retreated and switched to Rhyhorn&nB: Rhyhorn I CHOOSE YOU!&n
+OUT: 2 // Message // B retreated and switched to Rhyhorn&nB: Rhyhorn I CHOOSE YOU!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Jerry // Jerry // 999 // 10 // Mew // 50 // 50 // Butterfree // 70 // 50 // Pidgeotto // 60 // 50 // Magneton // 60 // 50 // Oddish // 50 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Message // You do not have enough energy to use this attack!-40Charming Looks
+OUT: 2 // MakeAction // Jerry // Jerry // 999 // 10 // Mew // 50 // 50 // Butterfree // 70 // 50 // Pidgeotto // 60 // 50 // Magneton // 60 // 50 // Oddish // 50 // 50
+IN: 2 // Pass
+OUT: 2 // Message // A passed their turn&n
+OUT: 2 // Message // A passed their turn&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Rhyhorn // Rhyhorn // 70 // 50 // Cubone // 40 // 50 // Psyduck // 50 // 50 // Machoke // 80 // 50 // Bulbasaur // 40 // 50
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message // B: Rhyhorn, USE Leer!
+OUT: 2 // Message // B: Rhyhorn, USE Leer!
+OUT: 2 // Message //  Jerry HAS BEEN DISABLED!&nRhyhorn INFLICTED 0 DAMAGE ON Jerry!&n
+OUT: 2 // Message //  Jerry HAS BEEN DISABLED!&nRhyhorn INFLICTED 0 DAMAGE ON Jerry!&n
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Jerry // Jerry // 999 // 20 // Mew // 50 // 50 // Butterfree // 70 // 50 // Pidgeotto // 60 // 50 // Magneton // 60 // 50 // Oddish // 50 // 50
+IN: 2 // Back
+OUT: 2 // MakeAction // Jerry // Jerry // 999 // 20 // Mew // 50 // 50 // Butterfree // 70 // 50 // Pidgeotto // 60 // 50 // Magneton // 60 // 50 // Oddish // 50 // 50
+IN: 2 // Pass
+OUT: 2 // Message // A passed their turn&n
+OUT: 2 // Message // A passed their turn&n
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Rhyhorn // Rhyhorn // 70 // 50 // Cubone // 40 // 50 // Psyduck // 50 // 50 // Machoke // 80 // 50 // Bulbasaur // 40 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message // B: Rhyhorn, USE Leer!
+OUT: 2 // Draw // Rhyhorn
+OUT: 2 // Message //  Jerry DODGED THE DISABLE!&nRhyhorn INFLICTED 0 DAMAGE ON Jerry!&n
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // B: Rhyhorn, USE Leer!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message //  Jerry DODGED THE DISABLE!&nRhyhorn INFLICTED 0 DAMAGE ON Jerry!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Jerry // Jerry // 999 // 30 // Mew // 50 // 50 // Butterfree // 70 // 50 // Pidgeotto // 60 // 50 // Magneton // 60 // 50 // Oddish // 50 // 50
+IN: 2 // Back
+OUT: 2 // MakeAction // Jerry // Jerry // 999 // 30 // Mew // 50 // 50 // Butterfree // 70 // 50 // Pidgeotto // 60 // 50 // Magneton // 60 // 50 // Oddish // 50 // 50
+IN: 3000 // B
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // bb72dc70
+OUT: 0 // 121cfda9
+IN: 1 // 121cfda9 // Dragonite // Keith // Goldeen // Metapod // Marowak // Kevin_Pei
+IN: 1 // 121cfda9 // Squirtle // Sandslash // Weezing // Abra // Clefairy // Ryan
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Ryan
+IN: 2 // InitPkmn // Kevin_Pei
+OUT: 2 // Success: Pokemon Registered
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Ryan I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // A: Kevin_Pei I CHOOSE YOU!
+OUT: 2 // Message // B: Ryan I CHOOSE YOU!
+OUT: 2 // Message // A: Kevin_Pei I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Kevin_Pei // Dragonite // 100 // 50 // Keith // 999 // 50 // Goldeen // 40 // 50 // Metapod // 70 // 50 // Marowak // 60 // 50 // Kevin_Pei // 999 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Kevin_Pei
+OUT: 2 // Draw // Kevin_Pei
+OUT: 2 // Message // A: Kevin_Pei, USE NodeJS!
+OUT: 2 // Message // A: Kevin_Pei, USE NodeJS!
+OUT: 2 // Message // Ryan HAS BEEN DISABLED!&nKevin_Pei INFLICTED 999 DAMAGE ON Ryan!&nRyan HAS FAINTED!&n
+OUT: 2 // Message // Ryan HAS BEEN DISABLED!&nKevin_Pei INFLICTED 999 DAMAGE ON Ryan!&nRyan HAS FAINTED!&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeChoose // Ryan // Squirtle // 40 // 50 // Sandslash // 70 // 50 // Weezing // 60 // 50 // Abra // 30 // 50 // Clefairy // 40 // 50 // Ryan // 0 // 50
+IN: 2 // Retreat // Sandslash
+OUT: 2 // Message // B retreated and switched to Sandslash&nB: Sandslash I CHOOSE YOU!&n
+OUT: 2 // Message // B retreated and switched to Sandslash&nB: Sandslash I CHOOSE YOU!&n
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Kevin_Pei // Dragonite // 100 // 50 // Keith // 999 // 50 // Goldeen // 40 // 50 // Metapod // 70 // 50 // Marowak // 60 // 50 // Kevin_Pei // 999 // 10
+IN: 2 // Back
+OUT: 2 // MakeAction // Kevin_Pei // Dragonite // 100 // 50 // Keith // 999 // 50 // Goldeen // 40 // 50 // Metapod // 70 // 50 // Marowak // 60 // 50 // Kevin_Pei // 999 // 10
+IN: 2 // Pass
+OUT: 2 // Message // A passed their turn&n
+OUT: 2 // Message // A passed their turn&n
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Sandslash // Squirtle // 40 // 50 // Sandslash // 70 // 50 // Weezing // 60 // 50 // Abra // 30 // 50 // Clefairy // 40 // 50
+IN: 2 // 1
+OUT: 2 // Draw // Sandslash
+OUT: 2 // Draw // Sandslash
+OUT: 2 // Message // B: Sandslash, USE Fury Swipes!
+OUT: 2 // Message // B: Sandslash, USE Fury Swipes!
+IN: 3000 // B
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // 4d3e784e
+OUT: 0 // 52eb99f9
+IN: 1 // 52eb99f9 // Sandshrew // Gengar // Venonat // Kevin_Pei // Dugtrio // Pidgeotto
+IN: 1 // 52eb99f9 // Growlithe // Vileplume // Scott // Magmar // Zubat // Muk
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Growlithe
+IN: 2 // InitPkmn // Sandshrew
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // B: Growlithe I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // A: Sandshrew I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Growlithe I CHOOSE YOU!
+OUT: 2 // MakeAction // Sandshrew // Sandshrew // 40 // 50 // Gengar // 80 // 50 // Venonat // 40 // 50 // Kevin_Pei // 999 // 50 // Dugtrio // 70 // 50 // Pidgeotto // 60 // 50
+OUT: 2 // Message // A: Sandshrew I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Sandshrew
+OUT: 2 // Draw // Sandshrew
+OUT: 2 // Message // A: Sandshrew, USE Sand-attack!
+OUT: 2 // Message // A: Sandshrew, USE Sand-attack!
+OUT: 2 // Message // Growlithe HAS BEEN DISABLED!&nSandshrew INFLICTED 10 DAMAGE ON Growlithe!&n
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Growlithe HAS BEEN DISABLED!&nSandshrew INFLICTED 10 DAMAGE ON Growlithe!&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Growlithe // Growlithe // 50 // 50 // Vileplume // 80 // 50 // Scott // 999 // 50 // Magmar // 50 // 50 // Zubat // 40 // 50 // Muk // 70 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Message // B: Growlithe, USE Flare!
+OUT: 2 // Message // B: Growlithe, USE Flare!
+OUT: 2 // Message // DAMAGE REDUCED TO 10 DUE TO DISABLE!&nGrowlithe INFLICTED 10 DAMAGE ON Sandshrew!&n
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // DAMAGE REDUCED TO 10 DUE TO DISABLE!&nGrowlithe INFLICTED 10 DAMAGE ON Sandshrew!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Sandshrew // Sandshrew // 30 // 50 // Gengar // 80 // 50 // Venonat // 40 // 50 // Kevin_Pei // 999 // 50 // Dugtrio // 70 // 50 // Pidgeotto // 60 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Sandshrew
+OUT: 2 // Draw // Sandshrew
+OUT: 2 // Message // A: Sandshrew, USE Sand-attack!
+OUT: 2 // Message // A: Sandshrew, USE Sand-attack!
+OUT: 2 // Message // Growlithe DODGED THE DISABLE!&nSandshrew INFLICTED 10 DAMAGE ON Growlithe!&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Growlithe DODGED THE DISABLE!&nSandshrew INFLICTED 10 DAMAGE ON Growlithe!&n
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeAction // Growlithe // Growlithe // 40 // 40 // Vileplume // 80 // 50 // Scott // 999 // 50 // Magmar // 50 // 50 // Zubat // 40 // 50 // Muk // 70 // 50
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Message // B: Growlithe, USE Flare!
+OUT: 2 // Message // B: Growlithe, USE Flare!
+OUT: 2 // Message // DAMAGE REDUCED TO 10 DUE TO DISABLE!&nGrowlithe INFLICTED 10 DAMAGE ON Sandshrew!&n
+OUT: 2 // Message // DAMAGE REDUCED TO 10 DUE TO DISABLE!&nGrowlithe INFLICTED 10 DAMAGE ON Sandshrew!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Sandshrew // Sandshrew // 20 // 50 // Gengar // 80 // 50 // Venonat // 40 // 50 // Kevin_Pei // 999 // 50 // Dugtrio // 70 // 50 // Pidgeotto // 60 // 50
+IN: 2 // Retreat // Pidgeotto
+OUT: 2 // Message // A retreated and switched to Pidgeotto&nA: Pidgeotto I CHOOSE YOU!&n
+OUT: 2 // Message // A retreated and switched to Pidgeotto&nA: Pidgeotto I CHOOSE YOU!&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeAction // Growlithe // Growlithe // 40 // 30 // Vileplume // 80 // 50 // Scott // 999 // 50 // Magmar // 50 // 50 // Zubat // 40 // 50 // Muk // 70 // 50
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Message // B: Growlithe, USE Flare!
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Message // DAMAGE REDUCED TO 10 DUE TO DISABLE!&nGrowlithe INFLICTED 10 DAMAGE ON Pidgeotto!&n
+OUT: 2 // Message // B: Growlithe, USE Flare!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // DAMAGE REDUCED TO 10 DUE TO DISABLE!&nGrowlithe INFLICTED 10 DAMAGE ON Pidgeotto!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Pidgeotto // Sandshrew // 20 // 50 // Gengar // 80 // 50 // Venonat // 40 // 50 // Kevin_Pei // 999 // 50 // Dugtrio // 70 // 50 // Pidgeotto // 50 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Pidgeotto
+OUT: 2 // Draw // Pidgeotto
+OUT: 2 // Message // A: Pidgeotto, USE Whirlwind!
+OUT: 2 // Message // A: Pidgeotto, USE Whirlwind!
+OUT: 2 // Message // Growlithe HAS BEEN STUNNED!&nPidgeotto INFLICTED 20 DAMAGE ON Growlithe!&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Growlithe HAS BEEN STUNNED!&nPidgeotto INFLICTED 20 DAMAGE ON Growlithe!&n
+OUT: 2 // Result // Engine Error
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Result // Engine Error
+IN: 2 // Ready
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 3000 // l
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 8b180911
+IN: 3000 // lo
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 7200f681
+IN: 1 // 7200f681 // Ponyta // Dodrio // Hitmonlee // Slowpoke // Sandslash // Drowzee
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Slowpoke
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 3000 // localhost
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 935f73b6
+IN: 3000 // localhost
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // d26421e3
+IN: 1 // d26421e3 // Butterfree // Meowth // Seaking // Ditto // Victreebel // Goldeen
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Butterfree
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 1 // d26421e3 // Growlithe // Vileplume // Scott // Magmar // Zubat // Muk
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Growlithe
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // cbee3030
+IN: 1 // cbee3030 // Henning // Koffing // Zubat // Exeggcute // Poliwag // Grimer
+OUT: -1 // Error: Room Killed
+IN: 0 // 
+OUT: 0 // 585f8eab
+IN: 1 // 585f8eab // Henning // Koffing // Zubat // Exeggcute // Poliwag // Grimer
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Henning
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 1 // 585f8eab // Karl // Victreebel // Kabuto // Fearow // Caterpie // Wigglytuff
+OUT: -1 // Error: Room Killed
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 57099055
+IN: 1 // 57099055 // Karl // Victreebel // Kabuto // Fearow // Caterpie // Wigglytuff
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Karl
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 1 // 57099055 // Seaking // Machamp // Ninetales // Krabby // Jerry // Haunter
+OUT: -1 // Error: Room Killed
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 9ca2a7a6
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 1 // 9ca2a7a6 // Magneton // Kangashkhan // Moltres // Oddish // Magnemite // Mankey
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Magneton
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 1 // 9ca2a7a6 // Seaking // Machamp // Ninetales // Krabby // Jerry // Haunter
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Machamp
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Magneton I CHOOSE YOU!
+OUT: 2 // Message // A: Machamp I CHOOSE YOU!
+OUT: 2 // Message // B: Magneton I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // A: Machamp I CHOOSE YOU!
+OUT: 2 // MakeAction // Machamp // Seaking // 70 // 50 // Machamp // 100 // 50 // Ninetales // 80 // 50 // Krabby // 50 // 50 // Jerry // 999 // 50 // Haunter // 60 // 50
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Machamp
+OUT: 2 // Draw // Machamp
+OUT: 2 // Message // A: Machamp, USE Seismic Toss!
+OUT: 2 // Message // IT'S SUPER EFFECTIVE!&nMachamp INFLICTED 120 DAMAGE ON Magneton!&nMagneton HAS FAINTED!&n
+OUT: 2 // Message // A: Machamp, USE Seismic Toss!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // IT'S SUPER EFFECTIVE!&nMachamp INFLICTED 120 DAMAGE ON Magneton!&nMagneton HAS FAINTED!&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Magneton // Magneton // 0 // 50 // Kangashkhan // 90 // 50 // Moltres // 70 // 50 // Oddish // 50 // 50 // Magnemite // 40 // 50 // Mankey // 30 // 50
+IN: 2 // Retreat // Kangashkhan
+OUT: 2 // Message // B retreated and switched to Kangashkhan&nB: Kangashkhan I CHOOSE YOU!&n
+OUT: 2 // Message // B retreated and switched to Kangashkhan&nB: Kangashkhan I CHOOSE YOU!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Machamp // Seaking // 70 // 50 // Machamp // 100 // 20 // Ninetales // 80 // 50 // Krabby // 50 // 50 // Jerry // 999 // 50 // Haunter // 60 // 50
+OUT: 2 // Message // ----- A's TURN! -----
