@@ -27,6 +27,10 @@ class room:
         while self.game_running:
             try:
                 if not self.can_join() and self.client_ready():
+
+                    if self.check_win():
+                        break
+
                     self.set_turn()
 
                     print(self.clients)
@@ -99,7 +103,7 @@ class room:
                                     connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon] = self.attack_action(connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon], connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon], attacks[int(action[0])])
                                     break
                                 else:
-                                    connections[self.clients[0]].message("You do not have enough energy to use this attack!")
+                                    connections[self.clients[0]].message("You do not have enough energy to use this attack!" + str(connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].energy - attacks[int(action[0])].cost) + attacks[int(action[0])].name)
 
             except:
                 print(traceback.format_exc())
@@ -108,6 +112,22 @@ class room:
                 for c in self.clients:
                     connections[c].in_game = False
                     connections[c].result('Engine Error')
+
+        self.__del__()
+
+    def check_win(self):
+        if len(connections[self.clients[0]].pokemon_dict) == 0:
+            connections[self.clients[0]].result('YOU LOSE!')
+            connections[self.clients[1]].result('YOU WIN!')
+            return True
+
+        elif len(connections[self.clients[1]].pokemon_dict) == 0:
+            connections[self.clients[0]].result('YOU WIN!')
+            connections[self.clients[1]].result('YOU LOSE!')
+            return True
+
+        return False
+
 
     def set_turn(self):
 
@@ -121,6 +141,9 @@ class room:
             for c in self.clients:
                 connections[c].message('%s: %s I CHOOSE YOU!' % (connections[self.clients[0]].name, connections[self.clients[0]].selected_pokemon))
                 connections[c].message('%s: %s I CHOOSE YOU!' % (connections[self.clients[1]].name, connections[self.clients[1]].selected_pokemon))
+
+        for p in connections[self.clients[0]].pokemon_dict:
+            connections[self.clients[0]].pokemon_dict[p].energy = min(50, connections[self.clients[0]].pokemon_dict[p].energy + 10)
 
         self.clients.append(self.clients[0])
         del self.clients[0]
@@ -234,7 +257,7 @@ class pokemon:
     def get_attacks(self, num_attacks, attack_data):
         attacks = []
         for num in range(0, num_attacks * 4, 4):
-            attacks.append(attack(attack_data[num : num + 3]))
+            attacks.append(attack(attack_data[num : num + 4]))
         return attacks
 
 class client:
@@ -345,6 +368,7 @@ class client:
         try:
             print('Client Disconnected')
             conn.send(bytes('-1 // Server Closed\r\n', 'utf-8'))
+            self.__del__()
         except:
             pass
 

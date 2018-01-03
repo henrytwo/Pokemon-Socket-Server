@@ -668,3 +668,1559 @@ OUT: 2 // Message // ----- Henry's TURN! -----
 OUT: 2 // Message // Waiting for Henry to finish their turn
 OUT: 2 // MakeAction // Rhyhorn // Ryan // 989 // 0 // Slowbro // 60 // 50 // Rhyhorn // 40 // 10 // Mew // 50 // 50 // Kakuna // 80 // 50 // Geodude // 50 // 50
 OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 3000 // Henry
+IN: 3000 // Pineapple
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // b9c58e79
+OUT: 0 // f22b3841
+IN: 1 // b9c58e79 // Growlithe // Machoke // Muk // Pidgey // Staryu // Ivysaur
+IN: 1 // b9c58e79 // Meowth // Magmar // Charizard // Kingler // Hitmonlee // Jynx
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Meowth
+IN: 2 // InitPkmn // Growlithe
+OUT: 2 // Success: Pokemon Registered
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Pineapple: Growlithe I CHOOSE YOU!
+OUT: 2 // Message // Henry: Meowth I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPineapple&nvs&nHenry&n----------&n&nStart battle!&n
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nHenry&nvs&nPineapple&n----------&n&nStart battle!&n
+OUT: 2 // MakeAction // Meowth // Meowth // 50 // 50 // Magmar // 50 // 50 // Charizard // 120 // 50 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // Pineapple: Growlithe I CHOOSE YOU!
+OUT: 2 // Message // Henry: Meowth I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Meowth
+OUT: 2 // Draw // Meowth
+OUT: 2 // Message // Henry: Meowth, USE Pay Day!
+OUT: 2 // Message // Henry: Meowth, USE Pay Day!
+OUT: 2 // Message //  
+OUT: 2 // Message // Meowth INFLICTED 10 DAMAGE ON Growlithe!
+OUT: 2 // Message //  
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // Message // Meowth INFLICTED 10 DAMAGE ON Growlithe!
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // MakeAction // Growlithe // Growlithe // 50 // 50 // Machoke // 80 // 50 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Message // Pineapple: Growlithe, USE Flare!
+OUT: 2 // Message // Pineapple: Growlithe, USE Flare!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Growlithe INFLICTED 20 DAMAGE ON Meowth!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Growlithe INFLICTED 20 DAMAGE ON Meowth!
+OUT: 2 // MakeAction // Meowth // Meowth // 30 // 30 // Magmar // 50 // 50 // Charizard // 120 // 50 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Meowth
+OUT: 2 // Draw // Meowth
+OUT: 2 // Message // Henry: Meowth, USE Pay Day!
+OUT: 2 // Message // Henry: Meowth, USE Pay Day!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Meowth INFLICTED 10 DAMAGE ON Growlithe!
+OUT: 2 // Message // Meowth INFLICTED 10 DAMAGE ON Growlithe!
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // MakeAction // Growlithe // Growlithe // 40 // 30 // Machoke // 80 // 50 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Draw // Growlithe
+OUT: 2 // Message // Pineapple: Growlithe, USE Flare!
+OUT: 2 // Message // Pineapple: Growlithe, USE Flare!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Growlithe INFLICTED 20 DAMAGE ON Meowth!
+OUT: 2 // Message // Growlithe INFLICTED 20 DAMAGE ON Meowth!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Meowth // Meowth // 10 // 10 // Magmar // 50 // 50 // Charizard // 120 // 50 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // 0
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Meowth // Meowth // 10 // 10 // Magmar // 50 // 50 // Charizard // 120 // 50 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // Retreat // Magmar
+OUT: 2 // Message // Henry retreated and switched to Magmar&nHenry: Magmar I CHOOSE YOU!
+OUT: 2 // Message // Henry retreated and switched to Magmar&nHenry: Magmar I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // MakeAction // Growlithe // Growlithe // 40 // 10 // Machoke // 80 // 50 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // 0
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Growlithe // Growlithe // 40 // 10 // Machoke // 80 // 50 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // 0
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Growlithe // Growlithe // 40 // 10 // Machoke // 80 // 50 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // Retreat // Machoke
+OUT: 2 // Message // Pineapple retreated and switched to Machoke&nPineapple: Machoke I CHOOSE YOU!
+OUT: 2 // Message // Pineapple retreated and switched to Machoke&nPineapple: Machoke I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Magmar // Meowth // 10 // 10 // Magmar // 50 // 50 // Charizard // 120 // 50 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // 1
+OUT: 2 // Draw // Magmar
+OUT: 2 // Draw // Magmar
+OUT: 2 // Message // Henry: Magmar, USE Flamethrower!
+OUT: 2 // Message //  
+OUT: 2 // Message // Henry: Magmar, USE Flamethrower!
+OUT: 2 // Message // Magmar INFLICTED 50 DAMAGE ON Machoke!
+OUT: 2 // Message //  
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // MakeAction // Machoke // Growlithe // 40 // 10 // Machoke // 30 // 50 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+OUT: 2 // Message // Magmar INFLICTED 50 DAMAGE ON Machoke!
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Machoke
+OUT: 2 // Draw // Machoke
+OUT: 2 // Message // Pineapple: Machoke, USE Submission!
+OUT: 2 // Message // Pineapple: Machoke, USE Submission!
+OUT: 2 // Message //  
+OUT: 2 // Message // Machoke INFLICTED 60 DAMAGE ON Magmar!
+OUT: 2 // Message //  
+OUT: 2 // Message // Magmar HAS FAINTED!
+OUT: 2 // Message // Machoke INFLICTED 60 DAMAGE ON Magmar!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // Magmar HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Magmar // Meowth // 10 // 10 // Magmar // 0 // 20 // Charizard // 120 // 50 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // Retreat // Charizard
+OUT: 2 // Message // Henry retreated and switched to Charizard&nHenry: Charizard I CHOOSE YOU!
+OUT: 2 // Message // Henry retreated and switched to Charizard&nHenry: Charizard I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // MakeAction // Machoke // Growlithe // 40 // 10 // Machoke // 30 // 10 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+IN: 2 // 1
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Machoke // Growlithe // 40 // 10 // Machoke // 30 // 10 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // Back
+OUT: 2 // MakeAction // Machoke // Growlithe // 40 // 10 // Machoke // 30 // 10 // Muk // 70 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // Retreat // Muk
+OUT: 2 // Message // Pineapple retreated and switched to Muk&nPineapple: Muk I CHOOSE YOU!
+OUT: 2 // Message // Pineapple retreated and switched to Muk&nPineapple: Muk I CHOOSE YOU!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Charizard // Meowth // 10 // 10 // Charizard // 120 // 50 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Charizard
+OUT: 2 // Draw // Charizard
+OUT: 2 // Message // Henry: Charizard, USE Fire Spin!
+OUT: 2 // Message // Henry: Charizard, USE Fire Spin!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Charizard INFLICTED 50 DAMAGE ON Muk!
+OUT: 2 // Message // Charizard INFLICTED 50 DAMAGE ON Muk!
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // MakeAction // Muk // Growlithe // 40 // 10 // Machoke // 30 // 10 // Muk // 20 // 50 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Muk
+OUT: 2 // Draw // Muk
+OUT: 2 // Message // Pineapple: Muk, USE Sludge!
+OUT: 2 // Message // Pineapple: Muk, USE Sludge!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Muk INFLICTED 30 DAMAGE ON Charizard!
+OUT: 2 // Message // Muk INFLICTED 30 DAMAGE ON Charizard!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Charizard // Meowth // 10 // 10 // Charizard // 90 // 10 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // Back
+OUT: 2 // MakeAction // Charizard // Meowth // 10 // 10 // Charizard // 90 // 10 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // Retreat // Meowth
+OUT: 2 // Message // Henry retreated and switched to Meowth&nHenry: Meowth I CHOOSE YOU!
+OUT: 2 // Message // Henry retreated and switched to Meowth&nHenry: Meowth I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // MakeAction // Muk // Growlithe // 40 // 10 // Machoke // 30 // 10 // Muk // 20 // 20 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // Back
+OUT: 2 // MakeAction // Muk // Growlithe // 40 // 10 // Machoke // 30 // 10 // Muk // 20 // 20 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+IN: 2 // Retreat // Ivysaur
+OUT: 2 // Message // Pineapple retreated and switched to Ivysaur&nPineapple: Ivysaur I CHOOSE YOU!
+OUT: 2 // Message // Pineapple retreated and switched to Ivysaur&nPineapple: Ivysaur I CHOOSE YOU!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // MakeAction // Meowth // Meowth // 10 // 10 // Charizard // 90 // 10 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // ----- Henry's TURN! -----
+IN: 2 // Back
+OUT: 2 // MakeAction // Meowth // Meowth // 10 // 10 // Charizard // 90 // 10 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 70 // 50
+IN: 2 // Retreat // Jynx
+OUT: 2 // Message // Henry retreated and switched to Jynx&nHenry: Jynx I CHOOSE YOU!
+OUT: 2 // Message // Henry retreated and switched to Jynx&nHenry: Jynx I CHOOSE YOU!
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+OUT: 2 // Message // Waiting for Pineapple to finish their turn
+OUT: 2 // MakeAction // Ivysaur // Growlithe // 40 // 10 // Machoke // 30 // 10 // Muk // 20 // 20 // Pidgey // 40 // 50 // Staryu // 40 // 50 // Ivysaur // 60 // 50
+OUT: 2 // Message // ----- Pineapple's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Ivysaur
+OUT: 2 // Draw // Ivysaur
+OUT: 2 // Message // Pineapple: Ivysaur, USE Poisonpowder!
+OUT: 2 // Message // Pineapple: Ivysaur, USE Poisonpowder!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Ivysaur INFLICTED 20 DAMAGE ON Jynx!
+OUT: 2 // Message // Waiting for Henry to finish their turn
+OUT: 2 // Message // Ivysaur INFLICTED 20 DAMAGE ON Jynx!
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // Message // ----- Henry's TURN! -----
+OUT: 2 // MakeAction // Jynx // Meowth // 10 // 10 // Charizard // 90 // 10 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 50 // 50
+IN: 2 // Info
+OUT: 2 // Info // Jynx // Meowth // 10 // 10 // Charizard // 90 // 10 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 50 // 50
+OUT: 2 // MakeAction // Jynx // Meowth // 10 // 10 // Charizard // 90 // 10 // Kingler // 60 // 50 // Hitmonlee // 60 // 50 // Jynx // 50 // 50
+IN: 3000 // B
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // 5497fb2d
+OUT: 0 // 3dc9d0ab
+IN: 1 // 3dc9d0ab // Golduck // Poliwag // Koffing // Doduo // Raticate // Victreebel
+IN: 1 // 3dc9d0ab // Mankey // Rhydon // Poliwag // Dugtrio // Raticate // Vaporeon
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Golduck
+IN: 2 // InitPkmn // Mankey
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // A: Golduck I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Mankey I CHOOSE YOU!
+OUT: 2 // Message // A: Golduck I CHOOSE YOU!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Mankey // Mankey // 30 // 50 // Rhydon // 100 // 50 // Poliwag // 40 // 50 // Dugtrio // 70 // 50 // Raticate // 60 // 50 // Vaporeon // 80 // 50
+OUT: 2 // Message // B: Mankey I CHOOSE YOU!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Mankey
+OUT: 2 // Draw // Mankey
+OUT: 2 // Message // B: Mankey, USE Scratch!
+OUT: 2 // Message //  
+OUT: 2 // Message // Mankey INFLICTED 10 DAMAGE ON Golduck!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Golduck // Golduck // 60 // 50 // Poliwag // 40 // 50 // Koffing // 50 // 50 // Doduo // 50 // 50 // Raticate // 60 // 50 // Victreebel // 80 // 50
+OUT: 2 // Message // B: Mankey, USE Scratch!
+OUT: 2 // Message //  
+OUT: 2 // Message // Mankey INFLICTED 10 DAMAGE ON Golduck!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Golduck
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message // A: Golduck, USE Hyper Beam!
+OUT: 2 // Message // A: Golduck, USE Hyper Beam!
+OUT: 2 // Message //  
+OUT: 2 // Message // Golduck INFLICTED 20 DAMAGE ON Mankey!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Mankey // Mankey // 10 // 50 // Rhydon // 100 // 50 // Poliwag // 40 // 50 // Dugtrio // 70 // 50 // Raticate // 60 // 50 // Vaporeon // 80 // 50
+OUT: 2 // Message //  
+OUT: 2 // Message // Golduck INFLICTED 20 DAMAGE ON Mankey!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Mankey
+OUT: 2 // Draw // Mankey
+OUT: 2 // Message // B: Mankey, USE Scratch!
+OUT: 2 // Message // B: Mankey, USE Scratch!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Mankey INFLICTED 10 DAMAGE ON Golduck!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Mankey INFLICTED 10 DAMAGE ON Golduck!
+OUT: 2 // MakeAction // Golduck // Golduck // 50 // 40 // Poliwag // 40 // 50 // Koffing // 50 // 50 // Doduo // 50 // 50 // Raticate // 60 // 50 // Victreebel // 80 // 50
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Golduck
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message // A: Golduck, USE Psyshock!
+OUT: 2 // Message //  
+OUT: 2 // Message // A: Golduck, USE Psyshock!
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Mankey!
+OUT: 2 // Message // Mankey HAS FAINTED!
+OUT: 2 // Message //  
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Mankey!
+OUT: 2 // Message // Mankey HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Mankey // Mankey // 0 // 50 // Rhydon // 100 // 50 // Poliwag // 40 // 50 // Dugtrio // 70 // 50 // Raticate // 60 // 50 // Vaporeon // 80 // 50
+IN: 2 // Retreat // Rhydon
+OUT: 2 // Message // B retreated and switched to Rhydon&nB: Rhydon I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Rhydon&nB: Rhydon I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Golduck // Golduck // 50 // 50 // Poliwag // 40 // 50 // Koffing // 50 // 50 // Doduo // 50 // 50 // Raticate // 60 // 50 // Victreebel // 80 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Golduck
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message // A: Golduck, USE Psyshock!
+OUT: 2 // Message //  
+OUT: 2 // Message // A: Golduck, USE Psyshock!
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Rhydon!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message //  
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Rhydon!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Rhydon // Rhydon // 90 // 50 // Poliwag // 40 // 50 // Dugtrio // 70 // 50 // Raticate // 60 // 50 // Vaporeon // 80 // 50
+IN: 2 // 1
+OUT: 2 // Draw // Rhydon
+OUT: 2 // Message // B: Rhydon, USE Ram!
+OUT: 2 // Message //  
+OUT: 2 // Message // Rhydon INFLICTED 40 DAMAGE ON Golduck!
+OUT: 2 // Draw // Rhydon
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // B: Rhydon, USE Ram!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message //  
+OUT: 2 // Message // Rhydon INFLICTED 40 DAMAGE ON Golduck!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Golduck // Golduck // 10 // 50 // Poliwag // 40 // 50 // Koffing // 50 // 50 // Doduo // 50 // 50 // Raticate // 60 // 50 // Victreebel // 80 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Golduck
+OUT: 2 // Draw // Golduck
+OUT: 2 // Message // A: Golduck, USE Psyshock!
+OUT: 2 // Message // A: Golduck, USE Psyshock!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Rhydon!
+OUT: 2 // Message // Golduck INFLICTED 10 DAMAGE ON Rhydon!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Rhydon // Rhydon // 80 // 30 // Poliwag // 40 // 50 // Dugtrio // 70 // 50 // Raticate // 60 // 50 // Vaporeon // 80 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Rhydon
+OUT: 2 // Draw // Rhydon
+OUT: 2 // Message // B: Rhydon, USE Horn Attack!
+OUT: 2 // Message //  
+OUT: 2 // Message // Rhydon INFLICTED 30 DAMAGE ON Golduck!
+OUT: 2 // Message // Golduck HAS FAINTED!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // B: Rhydon, USE Horn Attack!
+OUT: 2 // Message //  
+OUT: 2 // Message // Rhydon INFLICTED 30 DAMAGE ON Golduck!
+OUT: 2 // Message // Golduck HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Golduck // Golduck // 0 // 50 // Poliwag // 40 // 50 // Koffing // 50 // 50 // Doduo // 50 // 50 // Raticate // 60 // 50 // Victreebel // 80 // 50
+IN: 2 // Retreat // Poliwag
+OUT: 2 // Message // A retreated and switched to Poliwag&nA: Poliwag I CHOOSE YOU!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // A retreated and switched to Poliwag&nA: Poliwag I CHOOSE YOU!
+OUT: 2 // MakeAction // Rhydon // Rhydon // 80 // 20 // Poliwag // 40 // 50 // Dugtrio // 70 // 50 // Raticate // 60 // 50 // Vaporeon // 80 // 50
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 7aed4960
+IN: 1 // 7aed4960 // Arbok // Poliwrath // Scyther // Vulpix // Pidgeotto // Kingler
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Poliwrath
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 1 // 7aed4960 // Doduo // Scyther // Arbok // Wartortle // Cubone // Andrew
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Doduo
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // A: Poliwrath I CHOOSE YOU!
+OUT: 2 // Message // A: Poliwrath I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Doduo I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Doduo I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // MakeAction // Doduo // Doduo // 50 // 50 // Scyther // 70 // 50 // Arbok // 60 // 50 // Wartortle // 70 // 50 // Cubone // 40 // 50 // Andrew // 999 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Doduo
+OUT: 2 // Draw // Doduo
+OUT: 2 // Message // Pokemon Trainer: Doduo, USE Fury Attack!
+OUT: 2 // Message // Pokemon Trainer: Doduo, USE Fury Attack!
+OUT: 2 // Message //  
+OUT: 2 // Message // Doduo INFLICTED 10 DAMAGE ON Poliwrath!
+OUT: 2 // Message //  
+OUT: 2 // Message // Doduo INFLICTED 10 DAMAGE ON Poliwrath!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Poliwrath // Arbok // 60 // 50 // Poliwrath // 80 // 50 // Scyther // 70 // 50 // Vulpix // 50 // 50 // Pidgeotto // 60 // 50 // Kingler // 60 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Poliwrath
+OUT: 2 // Draw // Poliwrath
+OUT: 2 // Message // A: Poliwrath, USE Whirlpool!
+OUT: 2 // Message // A: Poliwrath, USE Whirlpool!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Poliwrath INFLICTED 40 DAMAGE ON Doduo!
+OUT: 2 // Message // Poliwrath INFLICTED 40 DAMAGE ON Doduo!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // MakeAction // Doduo // Doduo // 10 // 50 // Scyther // 70 // 50 // Arbok // 60 // 50 // Wartortle // 70 // 50 // Cubone // 40 // 50 // Andrew // 999 // 50
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Doduo
+OUT: 2 // Draw // Doduo
+OUT: 2 // Message // Pokemon Trainer: Doduo, USE Fury Attack!
+OUT: 2 // Message // Pokemon Trainer: Doduo, USE Fury Attack!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Doduo INFLICTED 10 DAMAGE ON Poliwrath!
+OUT: 2 // Message // Doduo INFLICTED 10 DAMAGE ON Poliwrath!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Poliwrath // Arbok // 60 // 50 // Poliwrath // 70 // 30 // Scyther // 70 // 50 // Vulpix // 50 // 50 // Pidgeotto // 60 // 50 // Kingler // 60 // 50
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 3000 // A
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+IN: 0 // 
+OUT: 0 // dd1e3a9e
+OUT: 0 // f0ebbe7e
+IN: 1 // f0ebbe7e // Persian // Mew // Blastoise // Machop // Nidoran(F) // Adam
+IN: 1 // f0ebbe7e // Tangela // Gyrados // Kadabra // Spearow // Gastly // Wigglytuff
+OUT: 1 // Success: Connected to room
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Adam
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Gyrados
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // B: Adam I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Adam I CHOOSE YOU!
+OUT: 2 // Message // A: Gyrados I CHOOSE YOU!
+OUT: 2 // Message // A: Gyrados I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Gyrados // Tangela // 50 // 50 // Gyrados // 100 // 50 // Kadabra // 60 // 50 // Spearow // 50 // 50 // Gastly // 30 // 50 // Wigglytuff // 80 // 50
+IN: 2 // 1
+OUT: 2 // Draw // Gyrados
+OUT: 2 // Draw // Gyrados
+OUT: 2 // Message // A: Gyrados, USE Bubblebeam!
+OUT: 2 // Message // A: Gyrados, USE Bubblebeam!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Gyrados INFLICTED 40 DAMAGE ON Adam!
+OUT: 2 // Message // Gyrados INFLICTED 40 DAMAGE ON Adam!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeAction // Adam // Persian // 70 // 50 // Mew // 50 // 50 // Blastoise // 100 // 50 // Machop // 50 // 50 // Nidoran(F) // 60 // 50 // Adam // 959 // 50
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Adam
+OUT: 2 // Draw // Adam
+OUT: 2 // Message // B: Adam, USE Despair!
+OUT: 2 // Message // B: Adam, USE Despair!
+OUT: 2 // Message //  
+OUT: 2 // Message // Adam INFLICTED 999 DAMAGE ON Gyrados!
+OUT: 2 // Message //  
+OUT: 2 // Message // Gyrados HAS FAINTED!
+OUT: 2 // Message // Adam INFLICTED 999 DAMAGE ON Gyrados!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // Gyrados HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Gyrados // Tangela // 50 // 50 // Gyrados // 0 // 20 // Kadabra // 60 // 50 // Spearow // 50 // 50 // Gastly // 30 // 50 // Wigglytuff // 80 // 50
+IN: 2 // Retreat // Wigglytuff
+OUT: 2 // Message // A retreated and switched to Wigglytuff&nA: Wigglytuff I CHOOSE YOU!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // A retreated and switched to Wigglytuff&nA: Wigglytuff I CHOOSE YOU!
+OUT: 2 // MakeAction // Adam // Persian // 70 // 50 // Mew // 50 // 50 // Blastoise // 100 // 50 // Machop // 50 // 50 // Nidoran(F) // 60 // 50 // Adam // 959 // 10
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // Retreat // Persian
+OUT: 2 // Message // B retreated and switched to Persian&nB: Persian I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // B retreated and switched to Persian&nB: Persian I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Wigglytuff // Tangela // 50 // 50 // Kadabra // 60 // 50 // Spearow // 50 // 50 // Gastly // 30 // 50 // Wigglytuff // 80 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Wigglytuff
+OUT: 2 // Message // A: Wigglytuff, USE Lullaby!
+OUT: 2 // Draw // Wigglytuff
+OUT: 2 // Message //  
+OUT: 2 // Message // A: Wigglytuff, USE Lullaby!
+OUT: 2 // Message // Wigglytuff INFLICTED 10 DAMAGE ON Persian!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message //  
+OUT: 2 // MakeAction // Persian // Persian // 60 // 50 // Mew // 50 // 50 // Blastoise // 100 // 50 // Machop // 50 // 50 // Nidoran(F) // 60 // 50 // Adam // 959 // 20
+OUT: 2 // Message // Wigglytuff INFLICTED 10 DAMAGE ON Persian!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Persian
+OUT: 2 // Draw // Persian
+OUT: 2 // Message // B: Persian, USE Scratch!
+OUT: 2 // Message // B: Persian, USE Scratch!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Persian INFLICTED 20 DAMAGE ON Wigglytuff!
+OUT: 2 // Message // Persian INFLICTED 20 DAMAGE ON Wigglytuff!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Wigglytuff // Tangela // 50 // 50 // Kadabra // 60 // 50 // Spearow // 50 // 50 // Gastly // 30 // 50 // Wigglytuff // 60 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 3000 // bob
+OUT: 3000 // DOCTYPE!
+IN: 3000 // Jeff
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // d61a52a8
+IN: 1 // d61a52a8 // Mewtwo // Kabutops // Kevin_Pei // Snorlax // Tentacruel // Alakazam
+OUT: 1 // Success: Connected to room
+IN: 1 // d61a52a8 // Andrew // Seadra // Slowpoke // Alakazam // Machop // Electrode
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Mewtwo
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Seadra
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Jeff: Seadra I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nJeff&nvs&nbob&n----------&n&nStart battle!&n
+OUT: 2 // Message // bob: Mewtwo I CHOOSE YOU!
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Mewtwo // Mewtwo // 60 // 50 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nbob&nvs&nJeff&n----------&n&nStart battle!&n
+OUT: 2 // Message // Jeff: Seadra I CHOOSE YOU!
+OUT: 2 // Message // bob: Mewtwo I CHOOSE YOU!
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Mewtwo
+OUT: 2 // Draw // Mewtwo
+OUT: 2 // Message // bob: Mewtwo, USE Barrier!
+OUT: 2 // Message // bob: Mewtwo, USE Barrier!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Mewtwo INFLICTED 10 DAMAGE ON Seadra!
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // Message // Mewtwo INFLICTED 10 DAMAGE ON Seadra!
+OUT: 2 // MakeAction // Seadra // Andrew // 999 // 50 // Seadra // 50 // 50 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Seadra
+OUT: 2 // Draw // Seadra
+OUT: 2 // Message // Jeff: Seadra, USE Water Gun!
+OUT: 2 // Message // Jeff: Seadra, USE Water Gun!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Seadra INFLICTED 10 DAMAGE ON Mewtwo!
+OUT: 2 // Message // Seadra INFLICTED 10 DAMAGE ON Mewtwo!
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Mewtwo // Mewtwo // 50 // 40 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // 1
+OUT: 2 // Draw // Mewtwo
+OUT: 2 // Message // bob: Mewtwo, USE Psychic!
+OUT: 2 // Draw // Mewtwo
+OUT: 2 // Message //  
+OUT: 2 // Message // bob: Mewtwo, USE Psychic!
+OUT: 2 // Message //  
+OUT: 2 // Message // Mewtwo INFLICTED 10 DAMAGE ON Seadra!
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Seadra // Andrew // 999 // 50 // Seadra // 40 // 40 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+OUT: 2 // Message // Mewtwo INFLICTED 10 DAMAGE ON Seadra!
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+IN: 2 // Pass
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Mewtwo // Mewtwo // 50 // 30 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // Pass
+OUT: 2 // Message // bob passed their turn
+OUT: 2 // Message // bob passed their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Seadra // Andrew // 999 // 50 // Seadra // 40 // 50 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+IN: 2 // Pass
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Mewtwo // Mewtwo // 50 // 40 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // Pass
+OUT: 2 // Message // bob passed their turn
+OUT: 2 // Message // bob passed their turn
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Seadra // Andrew // 999 // 50 // Seadra // 40 // 50 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Seadra
+OUT: 2 // Draw // Seadra
+OUT: 2 // Message // Jeff: Seadra, USE Agility!
+OUT: 2 // Message // Jeff: Seadra, USE Agility!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Seadra INFLICTED 20 DAMAGE ON Mewtwo!
+OUT: 2 // Message // Seadra INFLICTED 20 DAMAGE ON Mewtwo!
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Mewtwo // Mewtwo // 30 // 50 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Mewtwo
+OUT: 2 // Draw // Mewtwo
+OUT: 2 // Message // bob: Mewtwo, USE Barrier!
+OUT: 2 // Message //  
+OUT: 2 // Message // bob: Mewtwo, USE Barrier!
+OUT: 2 // Message // Mewtwo INFLICTED 10 DAMAGE ON Seadra!
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // Message //  
+OUT: 2 // Message // Mewtwo INFLICTED 10 DAMAGE ON Seadra!
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Seadra // Andrew // 999 // 50 // Seadra // 30 // 30 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 1
+OUT: 2 // Draw // Seadra
+OUT: 2 // Draw // Seadra
+OUT: 2 // Message // Jeff: Seadra, USE Water Gun!
+OUT: 2 // Message // Jeff: Seadra, USE Water Gun!
+OUT: 2 // Message //  
+OUT: 2 // Message // Seadra INFLICTED 10 DAMAGE ON Mewtwo!
+OUT: 2 // Message //  
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // Seadra INFLICTED 10 DAMAGE ON Mewtwo!
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Mewtwo // Mewtwo // 20 // 40 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // Info
+OUT: 2 // Info // Mewtwo // Mewtwo // 20 // 40 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+OUT: 2 // MakeAction // Mewtwo // Mewtwo // 20 // 40 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // Retreat // Kevin_Pei
+OUT: 2 // Message // bob retreated and switched to Kevin_Pei&nbob: Kevin_Pei I CHOOSE YOU!
+OUT: 2 // Message // bob retreated and switched to Kevin_Pei&nbob: Kevin_Pei I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Seadra // Andrew // 999 // 50 // Seadra // 30 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 0
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Seadra // Andrew // 999 // 50 // Seadra // 30 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // Pass
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Kevin_Pei // Mewtwo // 20 // 50 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 50 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Kevin_Pei
+OUT: 2 // Message // bob: Kevin_Pei, USE NodeJS!
+OUT: 2 // Message //  
+OUT: 2 // Draw // Kevin_Pei
+OUT: 2 // Message // bob: Kevin_Pei, USE NodeJS!
+OUT: 2 // Message //  
+OUT: 2 // Message // Kevin_Pei INFLICTED 999 DAMAGE ON Seadra!
+OUT: 2 // Message // Seadra HAS FAINTED!
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // Kevin_Pei INFLICTED 999 DAMAGE ON Seadra!
+OUT: 2 // Message // Seadra HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Seadra // Andrew // 999 // 50 // Seadra // 0 // 30 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // Retreat // Andrew
+OUT: 2 // Message // Jeff retreated and switched to Andrew&nJeff: Andrew I CHOOSE YOU!
+OUT: 2 // Message // Jeff retreated and switched to Andrew&nJeff: Andrew I CHOOSE YOU!
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // MakeAction // Kevin_Pei // Mewtwo // 20 // 50 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 10 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+OUT: 2 // Message // ----- bob's TURN! -----
+IN: 2 // Back
+OUT: 2 // MakeAction // Kevin_Pei // Mewtwo // 20 // 50 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 10 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // Pass
+OUT: 2 // Message // bob passed their turn
+OUT: 2 // Message // bob passed their turn
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // Pass
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // Jeff passed their turn
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // Message // ----- bob's TURN! -----
+OUT: 2 // MakeAction // Kevin_Pei // Mewtwo // 20 // 50 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 20 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // Retreat // Mewtwo
+OUT: 2 // Message // bob retreated and switched to Mewtwo&nbob: Mewtwo I CHOOSE YOU!
+OUT: 2 // Message // bob retreated and switched to Mewtwo&nbob: Mewtwo I CHOOSE YOU!
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // Jeff: Andrew, USE F*** Hardware!
+OUT: 2 // Message // Jeff: Andrew, USE F*** Hardware!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Mewtwo!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Mewtwo!
+OUT: 2 // Message // Mewtwo HAS FAINTED!
+OUT: 2 // Message // Mewtwo HAS FAINTED!
+OUT: 2 // Message // Waiting for bob to finish their turn
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Mewtwo // Mewtwo // 0 // 50 // Kabutops // 60 // 50 // Kevin_Pei // 999 // 30 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+IN: 2 // Retreat // Kevin_Pei
+OUT: 2 // Message // bob retreated and switched to Kevin_Pei&nbob: Kevin_Pei I CHOOSE YOU!
+OUT: 2 // Message // bob retreated and switched to Kevin_Pei&nbob: Kevin_Pei I CHOOSE YOU!
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 10 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+OUT: 2 // Message // ----- Jeff's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // Jeff: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Jeff: Andrew, USE Break Electronics!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Kevin_Pei!
+OUT: 2 // Message // Kevin_Pei HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message //  
+OUT: 2 // MakeChoose // Kevin_Pei // Kabutops // 60 // 50 // Kevin_Pei // 0 // 40 // Snorlax // 90 // 50 // Tentacruel // 60 // 50 // Alakazam // 80 // 50
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Kevin_Pei!
+OUT: 2 // Message // Kevin_Pei HAS FAINTED!
+OUT: 2 // Message // Waiting for bob to finish their turn
+IN: 2 // Retreat // Kabutops
+OUT: 2 // Message // bob retreated and switched to Kabutops&nbob: Kabutops I CHOOSE YOU!
+OUT: 2 // Message // bob retreated and switched to Kabutops&nbob: Kabutops I CHOOSE YOU!
+OUT: 2 // Message // Waiting for Jeff to finish their turn
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // Message // ----- Jeff's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 2
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 2
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 2
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 1
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 2 // 2
+OUT: 2 // Message // You do not have enough energy to use this attack!
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 20 // Slowpoke // 50 // 50 // Alakazam // 80 // 50 // Machop // 50 // 50 // Electrode // 80 // 50
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // e82613dc
+IN: 1 // e82613dc // Clefable // Chansey // Vaporeon // Electrode // Muk // Victreebel
+OUT: 1 // Success: Connected to room
+IN: 1 // e82613dc // Andrew // Venonat // Zubat // Kingler // Arbok // Henning
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Andrew
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Vaporeon
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // B: Vaporeon I CHOOSE YOU!
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Vaporeon I CHOOSE YOU!
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Venonat // 40 // 50 // Zubat // 40 // 50 // Kingler // 60 // 50 // Arbok // 60 // 50 // Henning // 999 // 50
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Vaporeon!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Vaporeon!
+OUT: 2 // Message // Vaporeon HAS FAINTED!
+OUT: 2 // Message // Vaporeon HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Vaporeon // Clefable // 70 // 50 // Chansey // 120 // 50 // Vaporeon // 0 // 50 // Electrode // 80 // 50 // Muk // 70 // 50 // Victreebel // 80 // 50
+IN: 2 // Retreat // Clefable
+OUT: 2 // Message // B retreated and switched to Clefable&nB: Clefable I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Clefable&nB: Clefable I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 10 // Venonat // 40 // 50 // Zubat // 40 // 50 // Kingler // 60 // 50 // Arbok // 60 // 50 // Henning // 999 // 50
+IN: 2 // 2
+OUT: 2 // Result // Engine Error
+OUT: 2 // Result // Engine Error
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 021530ea
+IN: 1 // 021530ea // Meowth // Cubone // Karl // Arbok // Aerodactyl // Wigglytuff
+OUT: 1 // Success: Connected to room
+IN: 1 // 021530ea // Andrew // Ryan // Voltorb // Koffing // Moltres // Clefable
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Andrew
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Meowth
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // B: Meowth I CHOOSE YOU!
+OUT: 2 // Message // B: Meowth I CHOOSE YOU!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Meowth // Meowth // 50 // 50 // Cubone // 40 // 50 // Karl // 69 // 50 // Arbok // 60 // 50 // Aerodactyl // 60 // 50 // Wigglytuff // 80 // 50
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // Pass
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // B passed their turn
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Ryan // 999 // 50 // Voltorb // 40 // 50 // Koffing // 50 // 50 // Moltres // 70 // 50 // Clefable // 70 // 50
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Meowth!
+OUT: 2 // Message //  
+OUT: 2 // Message // Meowth HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Meowth!
+OUT: 2 // MakeChoose // Meowth // Meowth // 0 // 50 // Cubone // 40 // 50 // Karl // 69 // 50 // Arbok // 60 // 50 // Aerodactyl // 60 // 50 // Wigglytuff // 80 // 50
+OUT: 2 // Message // Meowth HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+IN: 2 // Retreat // Cubone
+OUT: 2 // Message // B retreated and switched to Cubone&nB: Cubone I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Cubone&nB: Cubone I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 10 // Ryan // 999 // 50 // Voltorb // 40 // 50 // Koffing // 50 // 50 // Moltres // 70 // 50 // Clefable // 70 // 50
+IN: 2 // 2
+OUT: 2 // Message // You do not have enough energy to use this attack!-40
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 10 // Ryan // 999 // 50 // Voltorb // 40 // 50 // Koffing // 50 // 50 // Moltres // 70 // 50 // Clefable // 70 // 50
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 72e182a7
+IN: 1 // 72e182a7 // Flareon // Nidoking // Cloyster // Voltorb // Weezing // Pikachu
+OUT: 1 // Success: Connected to room
+IN: 1 // 72e182a7 // Andrew // Eevee // Kabuto // Golbat // Sandshrew // Jigglypuff
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Pikachu
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Andrew
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Pikachu I CHOOSE YOU!
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // B: Pikachu I CHOOSE YOU!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeAction // Pikachu // Flareon // 70 // 50 // Nidoking // 90 // 50 // Cloyster // 50 // 50 // Voltorb // 40 // 50 // Weezing // 60 // 50 // Pikachu // 40 // 50
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // Pass
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Eevee // 50 // 50 // Kabuto // 30 // 50 // Golbat // 60 // 50 // Sandshrew // 40 // 50 // Jigglypuff // 60 // 50
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Pikachu!
+OUT: 2 // Message // Pikachu HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Pikachu!
+OUT: 2 // Message // Pikachu HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Pikachu // Flareon // 70 // 50 // Nidoking // 90 // 50 // Cloyster // 50 // 50 // Voltorb // 40 // 50 // Weezing // 60 // 50 // Pikachu // 0 // 50
+IN: 2 // Retreat // Flareon
+OUT: 2 // Message // B retreated and switched to Flareon&nB: Flareon I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Flareon&nB: Flareon I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 10 // Eevee // 50 // 50 // Kabuto // 30 // 50 // Golbat // 60 // 50 // Sandshrew // 40 // 50 // Jigglypuff // 60 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Message // You do not have enough energy to use this attack!-40F*** Hardware
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 10 // Eevee // 50 // 50 // Kabuto // 30 // 50 // Golbat // 60 // 50 // Sandshrew // 40 // 50 // Jigglypuff // 60 // 50
+IN: 2 // Pass
+OUT: 2 // Message // A passed their turn
+OUT: 2 // Message // A passed their turn
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Flareon // Flareon // 70 // 50 // Nidoking // 90 // 50 // Cloyster // 50 // 50 // Voltorb // 40 // 50 // Weezing // 60 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Flareon
+OUT: 2 // Draw // Flareon
+OUT: 2 // Message // B: Flareon, USE Flamethrower!
+OUT: 2 // Message // B: Flareon, USE Flamethrower!
+OUT: 2 // Message //  
+OUT: 2 // Message // Flareon INFLICTED 60 DAMAGE ON Andrew!
+OUT: 2 // Message //  
+OUT: 2 // Message // Flareon INFLICTED 60 DAMAGE ON Andrew!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 939 // 20 // Eevee // 50 // 50 // Kabuto // 30 // 50 // Golbat // 60 // 50 // Sandshrew // 40 // 50 // Jigglypuff // 60 // 50
+IN: 2 // Pass
+OUT: 2 // Message // A passed their turn
+OUT: 2 // Message // A passed their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeAction // Flareon // Flareon // 70 // 20 // Nidoking // 90 // 50 // Cloyster // 50 // 50 // Voltorb // 40 // 50 // Weezing // 60 // 50
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // Retreat // Weezing
+OUT: 2 // Message // B retreated and switched to Weezing&nB: Weezing I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Weezing&nB: Weezing I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 939 // 30 // Eevee // 50 // 50 // Kabuto // 30 // 50 // Golbat // 60 // 50 // Sandshrew // 40 // 50 // Jigglypuff // 60 // 50
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Weezing!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Weezing!
+OUT: 2 // Message // Weezing HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Weezing HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeChoose // Weezing // Flareon // 70 // 30 // Nidoking // 90 // 50 // Cloyster // 50 // 50 // Voltorb // 40 // 50 // Weezing // 0 // 50
+IN: 2 // Retreat // Flareon
+OUT: 2 // Message // B retreated and switched to Flareon&nB: Flareon I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // B retreated and switched to Flareon&nB: Flareon I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 939 // 40 // Eevee // 50 // 50 // Kabuto // 30 // 50 // Golbat // 60 // 50 // Sandshrew // 40 // 50 // Jigglypuff // 60 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Flareon!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // Flareon HAS FAINTED!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Flareon!
+OUT: 2 // Message // Flareon HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Flareon // Flareon // 0 // 40 // Nidoking // 90 // 50 // Cloyster // 50 // 50 // Voltorb // 40 // 50
+OUT: 2 // Message // Waiting for B to finish their turn
+IN: 2 // Retreat // Voltorb
+OUT: 2 // Message // B retreated and switched to Voltorb&nB: Voltorb I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Voltorb&nB: Voltorb I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 939 // 50 // Eevee // 50 // 50 // Kabuto // 30 // 50 // Golbat // 60 // 50 // Sandshrew // 40 // 50 // Jigglypuff // 60 // 50
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 71fa4e79
+IN: 1 // 71fa4e79 // Porygon // Carol_Chen // Golem // Weepinbell // Primeape // Koffing
+OUT: 1 // Success: Connected to room
+IN: 1 // 71fa4e79 // Andrew // Koffing // Nidoking // Nidoran(M) // Jerry // Charizard
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Andrew
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Carol_Chen
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // B: Carol_Chen I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // B: Carol_Chen I CHOOSE YOU!
+OUT: 2 // MakeAction // Carol_Chen // Porygon // 30 // 50 // Carol_Chen // 999 // 50 // Golem // 80 // 50 // Weepinbell // 70 // 50 // Primeape // 70 // 50 // Koffing // 50 // 50
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+IN: 2 // Pass
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Koffing // 50 // 50 // Nidoking // 90 // 50 // Nidoran(M) // 40 // 50 // Jerry // 999 // 50 // Charizard // 120 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Carol_Chen!
+OUT: 2 // Message // Carol_Chen HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Carol_Chen // Porygon // 30 // 50 // Carol_Chen // 0 // 50 // Golem // 80 // 50 // Weepinbell // 70 // 50 // Primeape // 70 // 50 // Koffing // 50 // 50
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Carol_Chen!
+OUT: 2 // Message // Carol_Chen HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+IN: 2 // Retreat // Porygon
+OUT: 2 // Message // B retreated and switched to Porygon&nB: Porygon I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Porygon&nB: Porygon I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Koffing // 50 // 50 // Nidoking // 90 // 50 // Nidoran(M) // 40 // 50 // Jerry // 999 // 50 // Charizard // 120 // 50
+IN: 2 // 0
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Porygon!
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message // Porygon HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Porygon!
+OUT: 2 // Message // Porygon HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Porygon // Porygon // 0 // 50 // Golem // 80 // 50 // Weepinbell // 70 // 50 // Primeape // 70 // 50 // Koffing // 50 // 50
+IN: 2 // Retreat // Koffing
+OUT: 2 // Message // B retreated and switched to Koffing&nB: Koffing I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Koffing&nB: Koffing I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 10 // Koffing // 50 // 50 // Nidoking // 90 // 50 // Nidoran(M) // 40 // 50 // Jerry // 999 // 50 // Charizard // 120 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Koffing!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Koffing!
+OUT: 2 // Message // Koffing HAS FAINTED!
+OUT: 2 // Message // Koffing HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Koffing // Golem // 80 // 50 // Weepinbell // 70 // 50 // Primeape // 70 // 50 // Koffing // 0 // 50
+IN: 2 // Retreat // Golem
+OUT: 2 // Message // B retreated and switched to Golem&nB: Golem I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Golem&nB: Golem I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 20 // Koffing // 50 // 50 // Nidoking // 90 // 50 // Nidoran(M) // 40 // 50 // Jerry // 999 // 50 // Charizard // 120 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Golem!
+OUT: 2 // Message // Golem HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Golem!
+OUT: 2 // MakeChoose // Golem // Golem // 0 // 50 // Weepinbell // 70 // 50 // Primeape // 70 // 50
+OUT: 2 // Message // Golem HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+IN: 2 // Retreat // Weepinbell
+OUT: 2 // Message // B retreated and switched to Weepinbell&nB: Weepinbell I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Weepinbell&nB: Weepinbell I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 30 // Koffing // 50 // 50 // Nidoking // 90 // 50 // Nidoran(M) // 40 // 50 // Jerry // 999 // 50 // Charizard // 120 // 50
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Weepinbell!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Weepinbell!
+OUT: 2 // Message // Weepinbell HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Weepinbell // Weepinbell // 0 // 50 // Primeape // 70 // 50
+OUT: 2 // Message // Weepinbell HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+IN: 2 // Retreat // Primeape
+OUT: 2 // Message // B retreated and switched to Primeape&nB: Primeape I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Primeape&nB: Primeape I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 40 // Koffing // 50 // 50 // Nidoking // 90 // 50 // Nidoran(M) // 40 // 50 // Jerry // 999 // 50 // Charizard // 120 // 50
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Primeape!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Primeape!
+OUT: 2 // Message // Primeape HAS FAINTED!
+OUT: 2 // Message // Primeape HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Primeape // Primeape // 0 // 50
+IN: 3000 // B
+OUT: 3000 // DOCTYPE!
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 18b3ffe2
+IN: 1 // 18b3ffe2 // Andrew // Squirtle // Nidorino // Diglett // Dragonite // Nidoran(F)
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Andrew
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 1 // 18b3ffe2 // Machoke // Dragonite // Nidorino // Primeape // Scott // Growlithe
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Machoke
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nB&n----------&n&nStart battle!&n
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nB&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // B: Machoke I CHOOSE YOU!
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // B: Machoke I CHOOSE YOU!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // Message // ----- B's TURN! -----
+OUT: 2 // MakeAction // Machoke // Machoke // 80 // 50 // Dragonite // 100 // 50 // Nidorino // 60 // 50 // Primeape // 70 // 50 // Scott // 999 // 50 // Growlithe // 60 // 50
+IN: 2 // Pass
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // B passed their turn
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Squirtle // 40 // 50 // Nidorino // 60 // 50 // Diglett // 30 // 50 // Dragonite // 100 // 50 // Nidoran(F) // 60 // 50
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Machoke!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Machoke!
+OUT: 2 // Message // Machoke HAS FAINTED!
+OUT: 2 // Message // Machoke HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Machoke // Machoke // 0 // 50 // Dragonite // 100 // 50 // Nidorino // 60 // 50 // Primeape // 70 // 50 // Scott // 999 // 50 // Growlithe // 60 // 50
+IN: 2 // Retreat // Dragonite
+OUT: 2 // Message // B retreated and switched to Dragonite&nB: Dragonite I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Dragonite&nB: Dragonite I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Squirtle // 40 // 50 // Nidorino // 60 // 50 // Diglett // 30 // 50 // Dragonite // 100 // 50 // Nidoran(F) // 60 // 50
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Dragonite!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Dragonite!
+OUT: 2 // Message // Dragonite HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // Dragonite HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Dragonite // Dragonite // 0 // 50 // Nidorino // 60 // 50 // Primeape // 70 // 50 // Scott // 999 // 50 // Growlithe // 60 // 50
+IN: 2 // Retreat // Growlithe
+OUT: 2 // Message // B retreated and switched to Growlithe&nB: Growlithe I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Growlithe&nB: Growlithe I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Squirtle // 40 // 50 // Nidorino // 60 // 50 // Diglett // 30 // 50 // Dragonite // 100 // 50 // Nidoran(F) // 60 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Growlithe!
+OUT: 2 // Message // Growlithe HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Growlithe!
+OUT: 2 // Message // Growlithe HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Growlithe // Nidorino // 60 // 50 // Primeape // 70 // 50 // Scott // 999 // 50 // Growlithe // 0 // 50
+IN: 2 // Retreat // Scott
+OUT: 2 // Message // B retreated and switched to Scott&nB: Scott I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Scott&nB: Scott I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Squirtle // 40 // 50 // Nidorino // 60 // 50 // Diglett // 30 // 50 // Dragonite // 100 // 50 // Nidoran(F) // 60 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Scott!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Scott!
+OUT: 2 // Message // Scott HAS FAINTED!
+OUT: 2 // Message // Scott HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeChoose // Scott // Nidorino // 60 // 50 // Primeape // 70 // 50 // Scott // 0 // 50
+IN: 2 // Retreat // Nidorino
+OUT: 2 // Message // B retreated and switched to Nidorino&nB: Nidorino I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Nidorino&nB: Nidorino I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Squirtle // 40 // 50 // Nidorino // 60 // 50 // Diglett // 30 // 50 // Dragonite // 100 // 50 // Nidoran(F) // 60 // 50
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Nidorino!
+OUT: 2 // Message //  
+OUT: 2 // Message // Nidorino HAS FAINTED!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Nidorino!
+OUT: 2 // Message // Nidorino HAS FAINTED!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Nidorino // Nidorino // 0 // 50 // Primeape // 70 // 50
+IN: 2 // Retreat // Primeape
+OUT: 2 // Message // B retreated and switched to Primeape&nB: Primeape I CHOOSE YOU!
+OUT: 2 // Message // B retreated and switched to Primeape&nB: Primeape I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Squirtle // 40 // 50 // Nidorino // 60 // 50 // Diglett // 30 // 50 // Dragonite // 100 // 50 // Nidoran(F) // 60 // 50
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Primeape!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Primeape!
+OUT: 2 // Message // Primeape HAS FAINTED!
+OUT: 2 // Message // Primeape HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Waiting for B to finish their turn
+OUT: 2 // MakeChoose // Primeape // Primeape // 0 // 50
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 540bbb90
+IN: 1 // 540bbb90 // Parasect // Gengar // Kevin_Pei // Clefairy // Cubone // Nidoqueen
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Parasect
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 0 // 
+OUT: 0 // 8ee93c5a
+IN: 1 // 8ee93c5a // Tentacool // Golem // Slowbro // Snorlax // Nidorina // Flareon
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Golem
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 1 // 540bbb90 // Golbat // Bulbasaur // Seadra // Exeggcute // Staryu // Abra
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Bulbasaur
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Pokemon Trainer: Bulbasaur I CHOOSE YOU!
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // Pokemon Trainer: Parasect I CHOOSE YOU!
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Bulbasaur I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Parasect I CHOOSE YOU!
+OUT: 2 // MakeAction // Parasect // Parasect // 60 // 50 // Gengar // 80 // 50 // Kevin_Pei // 999 // 50 // Clefairy // 40 // 50 // Cubone // 40 // 50 // Nidoqueen // 90 // 50
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 1
+OUT: 2 // Draw // Parasect
+OUT: 2 // Message // Pokemon Trainer: Parasect, USE Slash!
+OUT: 2 // Draw // Parasect
+OUT: 2 // Message //  
+OUT: 2 // Message // Pokemon Trainer: Parasect, USE Slash!
+OUT: 2 // Message // Parasect INFLICTED 30 DAMAGE ON Bulbasaur!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message //  
+OUT: 2 // MakeAction // Bulbasaur // Golbat // 60 // 50 // Bulbasaur // 10 // 50 // Seadra // 60 // 50 // Exeggcute // 50 // 50 // Staryu // 40 // 50 // Abra // 30 // 50
+OUT: 2 // Message // Parasect INFLICTED 30 DAMAGE ON Bulbasaur!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Bulbasaur
+OUT: 2 // Draw // Bulbasaur
+OUT: 2 // Message // Pokemon Trainer: Bulbasaur, USE Leech Seed!
+OUT: 2 // Message // Pokemon Trainer: Bulbasaur, USE Leech Seed!
+OUT: 2 // Message //  
+OUT: 2 // Message // Bulbasaur INFLICTED 10 DAMAGE ON Parasect!
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+OUT: 2 // Message //  
+OUT: 2 // MakeAction // Parasect // Parasect // 50 // 30 // Gengar // 80 // 50 // Kevin_Pei // 999 // 50 // Clefairy // 40 // 50 // Cubone // 40 // 50 // Nidoqueen // 90 // 50
+OUT: 2 // Message // Bulbasaur INFLICTED 10 DAMAGE ON Parasect!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // ----- Pokemon Trainer's TURN! -----
+IN: 3000 // A
+OUT: 3000 // DOCTYPE!
+IN: 3000 // Pokemon Trainer
+OUT: 3000 // DOCTYPE!
+IN: 0 // 
+OUT: 0 // 9e967c1e
+IN: 1 // 9e967c1e // Mewtwo // Rhydon // Moltres // Blastoise // Butterfree // Weedle
+OUT: 1 // Success: Connected to room
+IN: 1 // 9e967c1e // Andrew // Clefable // Wartortle // Ekans // Oddish // Jynx
+OUT: 1 // Success: Connected to room
+IN: 2 // InitPkmn // Mewtwo
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // Waiting for opponent to join...
+IN: 2 // InitPkmn // Andrew
+OUT: 2 // Success: Pokemon Registered
+IN: 2 // Ready
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nPokemon Trainer&nvs&nA&n----------&n&nStart battle!&n
+OUT: 2 // Message // Waiting for opponent to join...
+OUT: 2 // Message // &cThe opponent has joined the match!&n&n----------&nA&nvs&nPokemon Trainer&n----------&n&nStart battle!&n
+OUT: 2 // Message // Pokemon Trainer: Mewtwo I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer: Mewtwo I CHOOSE YOU!
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Clefable // 70 // 50 // Wartortle // 70 // 50 // Ekans // 40 // 50 // Oddish // 50 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // A: Andrew I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Mewtwo!
+OUT: 2 // Message // Mewtwo HAS FAINTED!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Mewtwo!
+OUT: 2 // Message // Mewtwo HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Mewtwo // Mewtwo // 0 // 50 // Rhydon // 100 // 50 // Moltres // 70 // 50 // Blastoise // 100 // 50 // Butterfree // 70 // 50 // Weedle // 40 // 50
+IN: 2 // Retreat // Rhydon
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Rhydon&nPokemon Trainer: Rhydon I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Rhydon&nPokemon Trainer: Rhydon I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Clefable // 70 // 50 // Wartortle // 70 // 50 // Ekans // 40 // 50 // Oddish // 50 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Rhydon!
+OUT: 2 // Message // Rhydon HAS FAINTED!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Rhydon!
+OUT: 2 // Message // Rhydon HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Rhydon // Rhydon // 0 // 50 // Moltres // 70 // 50 // Blastoise // 100 // 50 // Butterfree // 70 // 50 // Weedle // 40 // 50
+IN: 2 // Retreat // Moltres
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Moltres&nPokemon Trainer: Moltres I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Moltres&nPokemon Trainer: Moltres I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Clefable // 70 // 50 // Wartortle // 70 // 50 // Ekans // 40 // 50 // Oddish // 50 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Moltres!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Moltres!
+OUT: 2 // Message // Moltres HAS FAINTED!
+OUT: 2 // Message // Moltres HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // MakeChoose // Moltres // Moltres // 0 // 50 // Blastoise // 100 // 50 // Butterfree // 70 // 50 // Weedle // 40 // 50
+IN: 2 // Retreat // Blastoise
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Blastoise&nPokemon Trainer: Blastoise I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Blastoise&nPokemon Trainer: Blastoise I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Clefable // 70 // 50 // Wartortle // 70 // 50 // Ekans // 40 // 50 // Oddish // 50 // 50 // Jynx // 70 // 50
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Blastoise!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Blastoise!
+OUT: 2 // Message // Blastoise HAS FAINTED!
+OUT: 2 // Message // Blastoise HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Blastoise // Blastoise // 0 // 50 // Butterfree // 70 // 50 // Weedle // 40 // 50
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+IN: 2 // Retreat // Butterfree
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Butterfree&nPokemon Trainer: Butterfree I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Butterfree&nPokemon Trainer: Butterfree I CHOOSE YOU!
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Clefable // 70 // 50 // Wartortle // 70 // 50 // Ekans // 40 // 50 // Oddish // 50 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 2
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE Break Electronics!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Butterfree!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Butterfree!
+OUT: 2 // Message // Butterfree HAS FAINTED!
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
+OUT: 2 // Message // Butterfree HAS FAINTED!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // MakeChoose // Butterfree // Butterfree // 0 // 50 // Weedle // 40 // 50
+IN: 2 // Retreat // Weedle
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Weedle&nPokemon Trainer: Weedle I CHOOSE YOU!
+OUT: 2 // Message // Pokemon Trainer retreated and switched to Weedle&nPokemon Trainer: Weedle I CHOOSE YOU!
+OUT: 2 // Message // ----- A's TURN! -----
+OUT: 2 // MakeAction // Andrew // Andrew // 999 // 50 // Clefable // 70 // 50 // Wartortle // 70 // 50 // Ekans // 40 // 50 // Oddish // 50 // 50 // Jynx // 70 // 50
+OUT: 2 // Message // Waiting for A to finish their turn
+OUT: 2 // Message // ----- A's TURN! -----
+IN: 2 // 0
+OUT: 2 // Draw // Andrew
+OUT: 2 // Draw // Andrew
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message // A: Andrew, USE F*** Hardware!
+OUT: 2 // Message //  
+OUT: 2 // Message //  
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Weedle!
+OUT: 2 // Message // Weedle HAS FAINTED!
+OUT: 2 // Message // Andrew INFLICTED 999 DAMAGE ON Weedle!
+OUT: 2 // Message // Your Pokemon has fainted! You must pick a replacement to continue fighting!
+OUT: 2 // Message // Weedle HAS FAINTED!
+OUT: 2 // MakeChoose // Weedle // Weedle // 0 // 50
+OUT: 2 // Message // Waiting for Pokemon Trainer to finish their turn
