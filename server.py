@@ -51,15 +51,15 @@ class room:
 
                         if connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].hp <= 0:
 
+                            if len(connections[self.clients[0]].pokemon_dict) == 1:
+                                connections[self.clients[0]].result('YOU LOSE!')
+                                connections[self.clients[1]].result('YOU WIN!')
+                                self.game_running = False
+
                             connections[self.clients[0]].message("Your Pokemon has fainted! You must pick a replacement to continue fighting!")
                             action = connections[self.clients[0]].make_choose()[1]
 
                             del connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon]
-
-                            if len(connections[self.clients[0]].pokemon_dict) == 0:
-                                connections[self.clients[0]].result('YOU LOSE!')
-                                connections[self.clients[1]].result('YOU WIN!')
-                                self.game_running = False
 
                         elif connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned:
                             connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].stunned = False
@@ -116,6 +116,8 @@ class room:
                 for c in self.clients:
                     connections[c].in_game = False
                     connections[c].result('Engine Error')
+
+        return -1
 
         garbage_queue.put(['room', self.code])
 
@@ -375,17 +377,19 @@ class client:
         except:
             pass
 
+        return -1
+
     def com_read(self, conn):
         while self.alive:
             try:
                 message_in = bytes.decode(conn.recv(1024), 'utf-8')
-                print('In:', message_in)
 
                 if self.in_game and message_in == '2 // Ready':
                     print("Ready filtered")
                 elif len(message_in) == 0:
-                    print("Blank filtered")
+                    pass
                 else:
+                    print('In:', message_in)
                     self.in_queue.put(message_in)
                     log_queue.put('IN: ' + message_in)
 
@@ -393,6 +397,8 @@ class client:
             except:
                 self.alive = False
                 print(traceback.format_exc())
+
+        return -1
 
     def com_write(self, conn):
         while self.alive:
@@ -406,6 +412,8 @@ class client:
             except:
                 self.alive = False
                 print(traceback.format_exc())
+
+        return -1
 
     def com_get(self):
         try:
@@ -512,8 +520,8 @@ if __name__ == '__main__':
     garbage_thread.start()
 
     log_queue = Queue()
-    log_process = Process(target=logger, args=(log_queue,))
-    log_process.start()
+    #log_process = Process(target=logger, args=(log_queue,))
+    #log_process.start()
 
     # Creates client object for each incoming connection
     while True:
