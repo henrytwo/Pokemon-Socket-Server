@@ -107,7 +107,7 @@ class room:
                                     connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon] = self.attack_action(connections[self.clients[1]].pokemon_dict[connections[self.clients[1]].selected_pokemon], connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon], attacks[int(action[0])])
                                     break
                                 else:
-                                    connections[self.clients[0]].message("You do not have enough energy to use this attack!" + str(connections[self.clients[0]].pokemon_dict[connections[self.clients[0]].selected_pokemon].energy - attacks[int(action[0])].cost) + attacks[int(action[0])].name)
+                                    connections[self.clients[0]].message("You do not have enough energy to use this attack!")
 
             except:
                 print(traceback.format_exc())
@@ -198,6 +198,7 @@ class room:
                         message_buffer += "Wild Storm succeeded! Attack repeated!&n"
 
                     elif final_damage == base_damage:
+                        final_damage = 0
                         message_buffer += 'Wild Storm missed!&n'
                         break
 
