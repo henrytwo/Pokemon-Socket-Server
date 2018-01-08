@@ -1,4 +1,4 @@
-Bulbasaur,40,leaf, ,fire,1,Leech Seed,20,10,heal
+Bulbasaur,40,leaf, ,fire,1,Leech Seed,20,10,recharge
 Ivysaur,60,leaf, ,fire,2,Vine Whip,30,20, ,Poisonpowder,30,20,wild storm
 Venusaur,100,leaf, ,fire,1,Solarbeam,40,60,wild storm
 Charmander,50,fire, ,water,2,Scratch,10,10, ,Ember,20,30,disable
@@ -9,7 +9,7 @@ Wartortle,70,water, ,electric,2,Withdraw,20,0,recharge,Bite,30,40,
 Blastoise,100,water, ,electric,1,Hydro Pump,30,40,wild storm
 Caterpie,40,leaf, ,fire,1,String Shot,10,10,stun
 Metapod,70,leaf, ,fire,2,Stiffen,20,0,disable,Stun Spore,20,20,stun
-Butterfree,70,leaf,fighting,fire,2,Whirlwind,20,20,stun,Mega Drain,40,40,heal
+Butterfree,70,leaf,fighting,fire,2,Whirlwind,20,20,stun,Mega Drain,40,40,recharge
 Weedle,40,leaf, ,fire,1,Poison Sting,10,10,wild storm
 Kakuna,80,leaf, ,fire,2,Stiffen,20,0,disable,Poisonpowder,20,20,wild storm
 Beedrill,80,leaf,fighting,fire,2,Twinneedle,30,30,wild storm,Poison Sting,30,40,wild storm
@@ -45,7 +45,7 @@ Gloom,60,leaf, ,fire,2,Poisonpowder,10,10,wild storm,Foul Odor,20,20,disable
 Vileplume,80,leaf, ,fire,1,Petal Dance,30,40,wild storm
 Paras,40,leaf, ,fire,2,Scratch,20,20, ,Spore,20,10,stun
 Parasect,60,leaf, ,fire,2,Spore,20,10,stun,Slash,30,30,
-Venonat,40,leaf, ,fire,2,Stun Spore,10,10,stun,Leech Life,20,10,heal
+Venonat,40,leaf, ,fire,2,Stun Spore,10,10,stun,Leech Life,20,10,recharge
 Venomoth,70,leaf,fighting,fire,1,Venom Powder,20,10,stun
 Diglett,30,fighting,electric,leaf,2,Dig,10,10, ,Mud Slap,20,30,
 Dugtrio,70,fighting,electric,leaf,2,Slash,30,40, ,Earthquake,40,70,disable
@@ -99,7 +99,7 @@ Krabby,50,water, ,electric,2,Call for Family,10,10,disable,Iron Grip,20,20,
 Kingler,60,water, ,electric,2,Flail,10,10,wild storm,Crabhammer,30,40,
 Voltorb,40,electric, ,fighting,1,Tackle,10,10,
 Electrode,80,electric, ,fighting,1,Electrick Shock,30,50,
-Exeggcute,50,leaf, ,fire,2,Hypnosis,10,10,stun,Leech Seed,20,20,heal
+Exeggcute,50,leaf, ,fire,2,Hypnosis,10,10,stun,Leech Seed,20,20,recharge
 Exeggutor,80,leaf, ,fire,2,Teleport,10,10,stun,Big Eggsplosion,10,20,wild storm
 Cubone,40,fighting,electric,leaf,2,Snivel,10,10,disable,Rage,20,10,wild storm
 Marowak,60,fighting,electric,leaf,2,Bonemerang,20,30,wild storm,Call for Friend,30,10,disable
@@ -110,7 +110,7 @@ Koffing,50,leaf, ,psychic,1,Foul Gas,20,10,stun
 Weezing,60,leaf, ,psychic,2,Smog,20,10,wild storm,Selfdestruct,30,70,wild storm
 Rhyhorn,70,fighting,electric,leaf,2,Leer,10,0,disable,Horn Attack,30,30,
 Rhydon,100,fighting,electric,leaf,2,Horn Attack,30,30, ,Ram,40,40,wild storm
-Chansey,120,normal,psychic,fighting,2,Scrunch,20,10,heal,Double-edge,40,80,
+Chansey,120,normal,psychic,fighting,2,Scrunch,20,10,recharge,Double-edge,40,80,
 Tangela,50,leaf, ,fire,2,Bind,20,20,stun,Poisonpowder,30,20,wild storm
 Kangashkhan,90,normal,psychic,fighting,2,Fetch,10,10,stun,Comet Punch,40,20,wild storm
 Horsea,40,water, ,electric,1,Smokescreen,10,10,disable
@@ -118,7 +118,7 @@ Seadra,60,water, ,electric,2,Water Gun,20,10,wild storm,Agility,30,20,stun
 Goldeen,40,water, ,electric,1,Horn Attack,10,10,
 Seaking,70,water, ,electric,2,Horn Attack,10,10, ,Waterfall,20,30,
 Staryu,40,water, ,electric,1,Slap,10,20,
-Starmie,60,water, ,electric,2,Recover,20,0,heal,Star Freeze,30,20,stun
+Starmie,60,water, ,electric,2,Recover,20,0,recharge,Star Freeze,30,20,stun
 Mr_Mime,40,psychic, ,psychic,1,Meditate,20,10,wild storm
 Scyther,70,leaf,fighting,fire,2,Swords Dance,10,0,disable,Slash,30,30,
 Jynx,70,psychic, ,psychic,2,Doubleslap,10,10,wild storm,Meditate,30,20,wild storm
@@ -138,7 +138,7 @@ Porygon,30,normal,psychic,fighting,2,Conversion 1,10,0,disable,Conversion 2,20,1
 Omanyte,40,water, ,leaf,1,Water Gun,10,10,wild storm
 Omastar,70,water, ,leaf,2,Water Gun,20,20,wild storm,Spike Cannon,30,30,wild storm
 Kabuto,30,fighting, ,leaf,1,scratch,10,10,
-Kabutops,60,fighting, ,leaf,2,Sharp Sickle,20,30, ,Absorb,40,40,heal
+Kabutops,60,fighting, ,leaf,2,Sharp Sickle,20,30, ,Absorb,40,40,recharge
 Aerodactyl,60,fighting,fighting,leaf,1,Wing Attack,30,30,
 Snorlax,90,normal,psychic,fighting,1,Body Slam,40,30,stun
 Articuno,70,water,fighting, ,2,Freeze Dry,30,30,stun,Blizzard,40,50,
